@@ -1,0 +1,71 @@
+body {
+    margin: 0;
+}
+
+//начало слайдера mini
+.variety-films-main {
+    color: $font-color;
+    background-color: $bgr-color;
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 1420px;
+        padding: 0px 30px;
+        text-align: center;
+    }
+
+    &__head {
+        font: 400 48px/72px 'Raleway';
+    }
+
+    &__text {
+        font: 400 36px/50px 'Raleway';
+    }
+}
+
+.slider-mini {
+    position: relative;
+
+    &__container {
+    max-width: 80%;
+    margin: 20px auto;
+    padding: 50px 0px;
+    background: $bgr-color;
+    overflow: hidden;
+}
+
+    &__slider-line {
+        display: flex;
+        left: 0;
+        transition: all ease 1s;
+    }
+
+    &__img {
+        max-height: 263px;
+        max-width: 243px;
+        padding: 0px 10px;
+    }
+
+    &__btn-prev,
+    &__btn-next {
+        position: absolute;
+        top: 40%;
+        z-index: 2;
+        width: 40px;
+        height: 40px;
+        border: 0;
+    }
+
+    &__btn-prev {
+        left: 50px;
+        background: $bgr-color url('../images/slider-mini/icons/prev-button.svg') no-repeat center;
+    }
+
+    &__btn-next {
+        right: 50px;
+        background: $bgr-color url('../images/slider-mini/icons/next-button.svg') no-repeat center;
+    }
+}
+//конец слайдера mini
