@@ -34,6 +34,148 @@
   font-style: normal;
   font-display: swap;
 }
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  color: #ffffff;
+  background-color: #000000;
+}
+
+.swiper, .slider-maxi__wrapper, .slider-maxi__slide {
+  width: 100%;
+}
+
+.slider-maxi__image {
+  text-align: center;
+}
+
+.slider-maxi__image img {
+  width: 100%;
+  height: 100vh;
+  opacity: 0.6;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  color: #ffffff;
+}
+
+.slider-maxi__pagination {
+  color: #ffffff;
+  line-height: 1.25px;
+  font-size: 1px;
+}
+
+.slider-maxi__text {
+  font-family: inherit;
+  font-size: 3.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.slider-maxi__text-wrapper {
+  text-align: right;
+  position: absolute;
+  bottom: 30%;
+  right: 10%;
+}
+.slider-maxi__text-wrapper_left {
+  text-align: left;
+  left: 10%;
+}
+
+span.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background-color: white;
+  opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+  .slider-maxi__image img {
+    width: 100%;
+    height: 80vh;
+    opacity: 0.6;
+  }
+  .slider-maxi__text {
+    font-size: 2.5rem;
+  }
+  .slider-maxi__text-wrapper {
+    right: 0;
+    left: 0;
+    bottom: 20%;
+    text-align: center;
+  }
+  .slider-maxi__slide {
+    text-align: center;
+  }
+}
+.visually-hidden {
+  display: none;
+}
+
+.description {
+  padding: 5rem 10rem;
+}
+
+.description__title {
+  margin-bottom: 5rem;
+  font-size: 3rem;
+  font-weight: normal;
+  text-align: center;
+}
+
+.description-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.description-container__img {
+  width: 6.25rem;
+  height: auto;
+  margin-bottom: 2rem;
+}
+
+.description-container__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.description-container__text {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 1024px) {
+  .description {
+    padding: 3rem 8rem;
+  }
+  .description-container__wrapper {
+    margin-bottom: 3rem;
+  }
+  .description-container {
+    justify-content: space-evenly;
+  }
+}
+@media screen and (max-width: 768px) {
+  .description__title {
+    font-size: 2rem;
+  }
+  .description-container__text {
+    font-size: 1rem;
+    text-align: center;
+  }
+  .description-container__img {
+    width: 5rem;
+  }
+}
+=======
 body {
   margin: 0;
 }
