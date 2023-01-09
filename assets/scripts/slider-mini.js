@@ -1,14 +1,14 @@
 const images = document.querySelectorAll('.slider-mini__container .slider-mini__slider-line img');
-const sliderLine = document.querySelector('.slider-mini__container .slider-mini__slider-line');
+const sliderLine = document.querySelector('.slider-mini__slider-line');
 let count = 0;
-let width;
+let width;_
 
 function init() {
     console.log('resize');
     width = document.querySelector('.slider-mini__container').offsetWidth;
     sliderLine.style.width = width/5 * images.length + 'px';
     images.forEach(item => {
-        item.style.width = width/5 + 'px';
+        item.style.width = width + 'px';
         item.style.height = 'auto';
     });
     rollSlider();
@@ -34,6 +34,6 @@ document.querySelector('.slider-mini__btn-prev').addEventListener('click', funct
 });
 
 function rollSlider() {
-    sliderLine.style.transform = 'translate(-' + count * width + 'px)';
+    sliderLine.style.transform = 'translate(-' + count * width/9 + 'px)';
 
 }

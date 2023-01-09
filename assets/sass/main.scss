@@ -15,6 +15,7 @@ body {
         flex-direction: column;
         align-items: center;
         max-width: 1420px;
+        padding: 0px 30px;
         text-align: center;
     }
 
@@ -28,26 +29,26 @@ body {
 }
 
 .slider-mini {
-    &__container {
     position: relative;
+
+    &__container {
     max-width: 80%;
     margin: 20px auto;
-    padding: 30px;
+    padding: 50px 0px;
     background: $bgr-color;
     overflow: hidden;
 }
 
     &__slider-line {
-        position: relative;
         display: flex;
         left: 0;
-        gap: 20px;
         transition: all ease 1s;
     }
 
     &__img {
         max-height: 263px;
         max-width: 243px;
+        padding: 0px 10px;
     }
 
     &__btn-prev,
@@ -61,12 +62,12 @@ body {
     }
 
     &__btn-prev {
-        right: 97.5%;
+        left: 50px;
         background: $bgr-color url('../images/slider-mini/icons/prev-button.svg') no-repeat center;
     }
 
     &__btn-next {
-        left: 98%;
+        right: 50px;
         background: $bgr-color url('../images/slider-mini/icons/next-button.svg') no-repeat center;
     }
 }

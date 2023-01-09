@@ -46,6 +46,7 @@ body {
   flex-direction: column;
   align-items: center;
   max-width: 1420px;
+  padding: 0px 30px;
   text-align: center;
 }
 .variety-films-main__head {
@@ -55,24 +56,25 @@ body {
   font: 400 36px/50px "Raleway";
 }
 
-.slider-mini__container {
+.slider-mini {
   position: relative;
+}
+.slider-mini__container {
   max-width: 80%;
   margin: 20px auto;
-  padding: 30px;
+  padding: 50px 0px;
   background: #000000;
   overflow: hidden;
 }
 .slider-mini__slider-line {
-  position: relative;
   display: flex;
   left: 0;
-  gap: 20px;
   transition: all ease 1s;
 }
 .slider-mini__img {
   max-height: 263px;
   max-width: 243px;
+  padding: 0px 10px;
 }
 .slider-mini__btn-prev, .slider-mini__btn-next {
   position: absolute;
@@ -83,11 +85,11 @@ body {
   border: 0;
 }
 .slider-mini__btn-prev {
-  right: 97.5%;
+  left: 50px;
   background: #000000 url("../images/slider-mini/icons/prev-button.svg") no-repeat center;
 }
 .slider-mini__btn-next {
-  left: 98%;
+  right: 50px;
   background: #000000 url("../images/slider-mini/icons/next-button.svg") no-repeat center;
 }
 
