@@ -1,37 +1,278 @@
+@charset "UTF-8";
 @font-face {
   font-family: "Raleway";
-  src: url("Raleway-Regular.woff2") format("woff2");
+  src: url(/assets/fonts/Raleway-Regular.woff2) format("woff2");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Raleway";
-  src: url("Raleway-Medium.woff2") format("woff2");
+  src: url(/assets/fonts/Raleway-Medium.woff2) format("woff2");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Raleway";
-  src: url("Raleway-Thin.woff2") format("woff2");
+  src: url(/assets/fonts/Raleway-Thin.woff2) format("woff2");
   font-weight: 100;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Raleway";
-  src: url("Raleway-Bold.woff2") format("woff2");
+  src: url(/assets/fonts/Raleway-Bold.woff2) format("woff2");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Raleway";
-  src: url("Raleway-Light.woff2") format("woff2");
+  src: url(/assets/fonts/Raleway-Light.woff2) format("woff2");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
+}
+.long-line {
+  height: 0px;
+  background: #E9EBF6;
+  width: 1455px;
+}
+
+.body {
+  background-color: black;
+  color: white;
+}
+
+.spiderMan {
+  font-family: "Raleway";
+  margin-top: 63px;
+  margin-left: 200px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 72px;
+  letter-spacing: -0.015em;
+  color: #FFFFFF;
+}
+
+.rating {
+  margin-left: 200px;
+  margin-bottom: 55px;
+  font-style: normal;
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: -0.015em;
+  color: #FFFFFF;
+}
+
+.icon {
+  margin-left: 199px;
+  box-sizing: border-box;
+  width: 362px;
+  height: 435px;
+  left: 199px;
+  top: 229px;
+  border: 1px solid #FFFFFF;
+  border-radius: 6px;
+}
+
+.list {
+  display: grid;
+  grid-template-areas: "column-1 column-2 column-3";
+  grid-template-columns: 1fr 1fr 2.5fr;
+  grid-template-rows: 600px;
+}
+
+.person {
+  margin-left: 141px;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: -0.015em;
+  color: #FFFFFF;
+}
+
+.actors {
+  text-decoration-line: underline;
+}
+
+.person-value {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: -0.015em;
+  color: #FFFFFF;
+}
+
+.description {
+  margin-top: 55px;
+  margin-left: 192px;
+  margin-right: 195px;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: -0.015em;
+  color: #FFFFFF;
+}
+
+.reviews {
+  margin-left: 192px;
+  margin-top: 113px;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: -0.015em;
+  color: #FFFFFF;
+}
+
+.comment_commentator {
+  margin-left: 189px;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: -0.015em;
+  color: #FFFFFF;
+}
+
+.comment {
+  margin-top: 45px;
+  margin-bottom: 70px;
+  display: grid;
+  grid-template-areas: "column-1 column-2";
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 200px;
+}
+
+.comment_first {
+  margin-right: 190px;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: -0.015em;
+  color: #FFFFFF;
+}
+
+.forma {
+  box-sizing: border-box;
+  margin-left: 270px;
+  margin-top: 188px;
+  width: 1290px;
+  height: 400px;
+  background: #D9D9D9;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 6px;
+}
+
+.forma_rewiew {
+  margin-left: 132px;
+  margin-top: 47px;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: -0.015em;
+  color: #000000;
+}
+
+.forma_rating {
+  margin-left: 130px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  letter-spacing: -0.015em;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.forma_textarea {
+  box-sizing: border-box;
+  margin-left: 132px;
+  margin-top: 30px;
+  width: 1025.8px;
+  height: 116.02px;
+  background: #D9D9D9;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 6px;
+}
+
+.forma_submit {
+  box-sizing: border-box;
+  margin-left: 132px;
+  margin-top: 21px;
+  width: 269px;
+  height: 29px;
+  background: #494B68;
+  border: 1px solid #FFFFFF;
+  border-radius: 6px;
+}
+
+.rating-area {
+  overflow: hidden;
+  width: 550px;
+  margin-left: 2px;
+}
+
+.rating-area:not(:checked) > input {
+  display: none;
+}
+
+.rating-area:not(:checked) > label {
+  float: right;
+  width: 30px;
+  cursor: pointer;
+  font-size: 32px;
+  line-height: 32px;
+  color: lightgrey;
+  text-shadow: 1px 1px #bbb;
+}
+
+.rating-area:not(:checked) > label:before {
+  content: "★";
+}
+
+.rating-area > input:checked ~ label {
+  color: gold;
+  text-shadow: 1px 1px #c60;
+}
+
+.rating-area:not(:checked) > label:hover,
+.rating-area:not(:checked) > label:hover ~ label {
+  color: gold;
+}
+
+.rating-area > input:checked + label:hover,
+.rating-area > input:checked + label:hover ~ label,
+.rating-area > input:checked ~ label:hover,
+.rating-area > input:checked ~ label:hover ~ label,
+.rating-area > label:hover ~ input:checked ~ label {
+  color: gold;
+  text-shadow: 1px 1px goldenrod;
+}
+
+.rate-area > label:active {
+  position: relative;
+}
+
+textarea {
+  padding: 20px;
 }
 
 /*# sourceMappingURL=main.css.map */
