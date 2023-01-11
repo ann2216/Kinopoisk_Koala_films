@@ -1,7 +1,3 @@
-body {
-    margin: 0;
-}
-
 //начало слайдера mini
 .variety-films-main {
     color: $font-color;
@@ -17,6 +13,7 @@ body {
     }
 
     &__head {
+        margin: 120px 0px 30px 0px;
         font: 400 48px/72px 'Raleway';
     }
 
@@ -31,7 +28,7 @@ body {
     &__container {
     max-width: 80%;
     margin: 20px auto;
-    padding: 50px 0px;
+    padding: 57px 0px 116px 0px;
     background: $bgr-color;
     overflow: hidden;
 }
@@ -68,4 +65,34 @@ body {
         background: $bgr-color url('../images/slider-mini/icons/next-button.svg') no-repeat center;
     }
 }
+
+.collections-of-films {
+    &__wrapper {
+        align-items: flex-start;
+        text-align: start;
+    }
+
+    &__head {
+        margin: 62px 0px 183px 0px;
+    }
+}
+
+.genres__block {
+    display: flex;
+    gap: 198px;
+    margin: 50px 0px 114px 0px;
+    font: 700 20px/50px 'Raleway';
+    text-decoration: none;
+}
+
+.genres__block a {
+    padding-bottom: 24px;
+    color: $font-color;
+    text-decoration: none;
+}
+
+.genres__block p {
+    padding-bottom: 24px;
+}
+
 //конец слайдера mini

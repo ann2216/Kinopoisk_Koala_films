@@ -174,10 +174,6 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
     width: 5rem;
   }
 }
-body {
-  margin: 0;
-}
-
 .variety-films-main {
   color: #ffffff;
   background-color: #000000;
@@ -191,6 +187,7 @@ body {
   text-align: center;
 }
 .variety-films-main__head {
+  margin: 120px 0px 30px 0px;
   font: 400 48px/72px "Raleway";
 }
 .variety-films-main__text {
@@ -203,7 +200,7 @@ body {
 .slider-mini__container {
   max-width: 80%;
   margin: 20px auto;
-  padding: 50px 0px;
+  padding: 57px 0px 116px 0px;
   background: #000000;
   overflow: hidden;
 }
@@ -232,6 +229,32 @@ body {
 .slider-mini__btn-next {
   right: 50px;
   background: #000000 url("../images/slider-mini/icons/next-button.svg") no-repeat center;
+}
+
+.collections-of-films__wrapper {
+  align-items: flex-start;
+  text-align: start;
+}
+.collections-of-films__head {
+  margin: 62px 0px 183px 0px;
+}
+
+.genres__block {
+  display: flex;
+  gap: 198px;
+  margin: 50px 0px 114px 0px;
+  font: 700 20px/50px "Raleway";
+  text-decoration: none;
+}
+
+.genres__block a {
+  padding-bottom: 24px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.genres__block p {
+  padding-bottom: 24px;
 }
 
 .long-line {
