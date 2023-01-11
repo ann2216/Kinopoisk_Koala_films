@@ -1,0 +1,16 @@
+.photo {
+    padding: 25rem 40rem 15rem 10rem;
+    background-image: url('/assets/img/moulin-rouge.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: $btn-color;
+}
+
+.photo__text {
+    margin-bottom: 2rem;
+}
+
+.photo__button {
+    font-family: inherit;
+}
