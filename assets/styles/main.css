@@ -1,40 +1,39 @@
 @charset "UTF-8";
 @font-face {
   font-family: "Raleway";
-  src: url(/assets/fonts/Raleway-Regular.woff2) format("woff2");
+  src: url(../fonts/Raleway-Regular.woff2) format("woff2");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Raleway";
-  src: url(/assets/fonts/Raleway-Medium.woff2) format("woff2");
+  src: url(../fonts/Raleway-Medium.woff2) format("woff2");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Raleway";
-  src: url(/assets/fonts/Raleway-Thin.woff2) format("woff2");
+  src: url(../fonts/Raleway-Thin.woff2) format("woff2");
   font-weight: 100;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Raleway";
-  src: url(/assets/fonts/Raleway-Bold.woff2) format("woff2");
+  src: url(../fonts/Raleway-Bold.woff2) format("woff2");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Raleway";
-  src: url(/assets/fonts/Raleway-Light.woff2) format("woff2");
+  src: url(../fonts/Raleway-Light.woff2) format("woff2");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
 }
-
 * {
   margin: 0;
   padding: 0;
@@ -175,7 +174,6 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
     width: 5rem;
   }
 }
-=======
 body {
   margin: 0;
 }
@@ -475,6 +473,17 @@ body {
 
 textarea {
   padding: 20px;
+}
+
+.movie-result {
+  padding: 5rem;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 1.5rem;
+}
+
+.movie-card {
+  width: 3rem;
 }
 
 /*# sourceMappingURL=main.css.map */
