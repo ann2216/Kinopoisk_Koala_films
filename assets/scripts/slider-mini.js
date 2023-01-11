@@ -37,7 +37,8 @@ function rollSlider() {
     sliderLine.style.transform = 'translate(-' + count * width/9 + 'px)';
     if (screenSize > 1180) {
 		sliderLine.style.transform = 'translate(-' + count * width/7 + 'px)';
-	} else if (screenSize > 700) {
+	} 
+    else if (screenSize > 700) {
 		sliderLine.style.transform = 'translate(-' + count * width/3 + 'px)';
 	} 
     else if (screenSize > 500) {
