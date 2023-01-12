@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="/favicon.ico">
+    <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="./assets/styles/main.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <title>Document</title>
@@ -16,14 +16,14 @@
     <header class="header">
         <div class="header-container container">
             <div class="header_logo"></div>
-                <p class="section_logo" style="color:white">Koala Films</p>
-    <!-- Меню -->
-                <p class="main_catalogue" style="color:white"><a href="./catalogue.html">Catalogue</a></p>
-                <p class="main_collections" style="color:white">Collections</p>
-                <p class="main_community" style="color:white">Community</p>
-                <p class="main_onlinetv" style="color:white">Online TV</p>
-                <button class="button_button1">Sign In</button>
-                <button class="button_button2">Sign Up</button>
+            <p class="section_logo" style="color:white">Koala Films</p>
+            <!-- Меню -->
+            <p class="main_catalogue" style="color:white"><a href="./catalogue.html">Catalogue</a></p>
+            <p class="main_collections" style="color:white">Collections</p>
+            <p class="main_community" style="color:white">Community</p>
+            <p class="main_onlinetv" style="color:white">Online TV</p>
+            <button class="button_button1">Sign In</button>
+            <button class="button_button2">Sign Up</button>
         </div>
     </header>
 
@@ -38,7 +38,7 @@
                     </div>
                     <div class="slider-maxi__text-wrapper">
                         <p class="slider-maxi__text">Find your movie</p>
-                        <a href="./catalogue.html" class="slider-maxi__link">Find Film</a>
+                        <a href="./catalogue.html" class="slider-maxi__link button">Find Film</a>
                     </div>
                 </div>
                 <div class="slider-maxi__slide swiper-slide">
@@ -46,14 +46,14 @@
                     </div>
                     <div class="slider-maxi__text-wrapper slider-maxi__text-wrapper_left">
                         <p class="slider-maxi__text">Join the community</p>
-                        <a href="./catalogue.html" class="slider-maxi__link">Sign Up</a>
+                        <a href="./catalogue.html" class="slider-maxi__link button">Sign Up</a>
                     </div>
                 </div>
                 <div class="slider-maxi__slide swiper-slide">
                     <div class="slider-maxi__image"><img src="./assets/img/cinema-Hall.jpg" alt="Cinema window.">
                         <div class="slider-maxi__text-wrapper">
                             <p class="slider-maxi__text">Check collections</p>
-                            <a href="./catalogue.html" class="slider-maxi__link">Collections</a>
+                            <a href="./catalogue.html" class="slider-maxi__link button">Collections</a>
                         </div>
                     </div>
                 </div>
@@ -64,8 +64,8 @@
         </div>
     </section>
 
-    <!-- discription -->
-    <section class="description">
+    <!-- description -->
+    <section class="description-main">
         <h2 class="description__title">What you can find here</h2>
         <div class="description-container">
             <div class="description-container__wrapper">
@@ -163,11 +163,61 @@
         </div>
     </section>
 
+    <!-- photo -->
+    <section class="photo">
+        <h2 class="visually-hidden">Photo block</h2>
+        <div class="photo__wrapper">
+            <p class="photo__text title">The largest community of film enthusiasts</p>
+            <button class="photo__button button">Join Today</button>
+        </div>
+    </section>
+
+    <!-- slider-mini -->
+    <div class="variety-films-main">
+        <div class="variety-films-main__wrapper">
+            <div class="variety-films-main__head">
+                <h2>Что посмотреть вечером</h2>
+            </div>
+            <div class="variety-films-main__text">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                </p>
+            </div>
+        </div>
+        <div class="variety-films-main__slider-mini slider-mini">
+            <div class="slider-mini__container">
+                <div class="slider-mini__slider-line">
+                    <a href="#"><img class="slider-mini__img" src="./assets/images/slider-mini/fastFurious-1.jpg"
+                            alt="The Fast and the Furious"></a>
+                    <a href="#"><img class="slider-mini__img" src="./assets/images/slider-mini/fastFurious-2.jpg"
+                            alt="The Fast and the Furious 2"></a>
+                    <a href="#"><img class="slider-mini__img" src="./assets/images/slider-mini/fastFurious-3.jpg"
+                            alt="The Fast and the Furious 3"></a>
+                    <a href="#"><img class="slider-mini__img" src="./assets/images/slider-mini/fastFurious-4.jpg"
+                            alt="The Fast and the Furious 4"></a>
+                    <a href="#"><img class="slider-mini__img" src="./assets/images/slider-mini/fastFurious-5.jpg"
+                            alt="The Fast and the Furious 5"></a>
+                    <a href="#"><img class="slider-mini__img" src="./assets/images/slider-mini/fastFurious-6.jpg"
+                            alt="The Fast and the Furious 6"></a>
+                    <a href="#"><img class="slider-mini__img" src="./assets/images/slider-mini/fastFurious-7.jpg"
+                            alt="The Fast and the Furious 7"></a>
+                    <a href="#"><img class="slider-mini__img" src="./assets/images/slider-mini/fastFurious-8.jpg"
+                            alt="The Fast and the Furious 8"></a>
+                    <a href="#"><img class="slider-mini__img" src="./assets/images/slider-mini/fastFurious-9.jpg"
+                            alt="The Fast and the Furious 9"></a>
+                    <a href="#"><img class="slider-mini__img" src="./assets/images/slider-mini/fastFurious-10.jpg"
+                            alt="The Fast and the Furious 10"></a>
+                </div>
+            </div>
+            <button class="slider-mini__btn-prev"></button>
+            <button class="slider-mini__btn-next"></button>
+        </div>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="./assets/scripts/script.js"></script>
+    <script src="./assets/scripts/slider-mini.js"></script>
 
     <!-- footer-->
-    
+
 </body>
 
 </html>
