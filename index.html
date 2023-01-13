@@ -1,12 +1,223 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="./assets/styles/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <title>Document</title>
 </head>
+
 <body>
-    
+    <!-- header-->
+    <header class="header">
+        <div class="header-container container">
+            <div class="header_logo"></div>
+            <p class="section_logo" style="color:white">Koala Films</p>
+            <!-- Меню -->
+            <p class="main_catalogue" style="color:white"><a href="./catalogue.html">Catalogue</a></p>
+            <p class="main_collections" style="color:white">Collections</p>
+            <p class="main_community" style="color:white">Community</p>
+            <p class="main_onlinetv" style="color:white">Online TV</p>
+            <button class="button_button1">Sign In</button>
+            <button class="button_button2">Sign Up</button>
+        </div>
+    </header>
+
+    <!-- slider maxi -->
+    <section class="slider-maxi">
+        <h2 class="visually-hidden">Slider with photos of the movies</h2>
+
+        <div class="slider-maxi__container swiper" style="--swiper-navigation-size: 20px">
+            <div class="slider-maxi__wrapper swiper-wrapper">
+                <div class="slider-maxi__slide swiper-slide">
+                    <div class="slider-maxi__image"><img src="./assets/img/covers2.jpg" alt="Covers of many movies.">
+                    </div>
+                    <div class="slider-maxi__text-wrapper">
+                        <p class="slider-maxi__text">Find your movie</p>
+                        <a href="./catalogue.html" class="slider-maxi__link button">Find Film</a>
+                    </div>
+                </div>
+                <div class="slider-maxi__slide swiper-slide">
+                    <div class="slider-maxi__image"><img src="./assets/img/cinema2.jpg" alt="Clown with a baloon.">
+                    </div>
+                    <div class="slider-maxi__text-wrapper slider-maxi__text-wrapper_left">
+                        <p class="slider-maxi__text">Join the community</p>
+                        <a href="./catalogue.html" class="slider-maxi__link button">Sign Up</a>
+                    </div>
+                </div>
+                <div class="slider-maxi__slide swiper-slide">
+                    <div class="slider-maxi__image"><img src="./assets/img/cinema-Hall.jpg" alt="Cinema window.">
+                        <div class="slider-maxi__text-wrapper">
+                            <p class="slider-maxi__text">Check collections</p>
+                            <a href="./catalogue.html" class="slider-maxi__link button">Collections</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-maxi__pagination swiper-pagination"></div>
+            <div class="slider-maxi____button_prev swiper-button-prev"></div>
+            <div class="slider-maxi____button_next swiper-button-next"></div>
+        </div>
+    </section>
+
+    <!-- description -->
+    <section class="description-main">
+        <h2 class="description__title">What you can find here</h2>
+        <div class="description-container">
+            <div class="description-container__wrapper">
+                <svg class="description-container__img" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Icons" x="0px" y="0px"
+                    viewBox="0 0 32 32" style="enable-background:new 0 0 32 32;" xml:space="preserve">
+                    <style type="text/css">
+                        .st0 {
+                            fill: none;
+                            stroke: #ffffff;
+                            stroke-width: 2;
+                            stroke-linecap: round;
+                            stroke-linejoin: round;
+                            stroke-miterlimit: 10;
+                        }
+                    </style>
+                    <circle class="st0" cx="9" cy="7" r="5" />
+                    <circle class="st0" cx="19" cy="7" r="5" />
+                    <path class="st0"
+                        d="M21,25H7c-1.1,0-2-0.9-2-2v-6c0-1.1,0.9-2,2-2h14c1.1,0,2,0.9,2,2v6C23,24.1,22.1,25,21,25z" />
+                    <polygon class="st0" points="29,25 23,22 23,18 29,15 " />
+                    <polyline class="st0" points="10,31 14,25 18,31 " />
+                    <circle class="st0" cx="9" cy="7" r="1" />
+                    <circle class="st0" cx="19" cy="7" r="1" />
+                </svg>
+                <p class="description-container__text">Catalogue of Movies</p>
+            </div>
+            <div class="description-container__wrapper">
+                <svg class="description-container__img" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Icons" x="0px" y="0px"
+                    viewBox="0 0 32 32" style="enable-background:new 0 0 32 32;" xml:space="preserve">
+                    <style type="text/css">
+                        .st0 {
+                            fill: none;
+                            stroke: #ffffff;
+                            stroke-width: 2;
+                            stroke-linecap: round;
+                            stroke-linejoin: round;
+                            stroke-miterlimit: 10;
+                        }
+                    </style>
+                    <path class="st0" d="M3,8v14c0,1.1,0.9,2,2,2h16.8l7.3,6v-6V8c0-1.1-0.9-2-2-2H5C3.9,6,3,6.9,3,8z" />
+                    <polygon class="st0"
+                        points="12,9.9 13.5,13.1 17,13.6 14.5,16 15.1,19.4 12,17.8 8.9,19.4 9.5,16 7,13.6 10.5,13.1 " />
+                    <line class="st0" x1="20" y1="13" x2="25" y2="13" />
+                    <line class="st0" x1="22" y1="17" x2="25" y2="17" />
+                </svg>
+                <p class="description-container__text">Recommendations</p>
+            </div>
+            <div class="description-container__wrapper">
+                <svg class="description-container__img" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Icons" x="0px" y="0px"
+                    viewBox="0 0 32 32" style="enable-background:new 0 0 32 32;" xml:space="preserve">
+                    <style type="text/css">
+                        .st0 {
+                            fill: none;
+                            stroke: #ffffff;
+                            stroke-width: 2;
+                            stroke-linecap: round;
+                            stroke-linejoin: round;
+                            stroke-miterlimit: 10;
+                        }
+                    </style>
+                    <path class="st0" d="M27,31H5c-1.1,0-2-0.9-2-2V16h26v13C29,30.1,28.1,31,27,31z" />
+                    <path class="st0"
+                        d="M23.5,1.1L2.8,8.7c-1,0.4-1.6,1.5-1.2,2.6L3,15l24.4-8.9l-1.4-3.8C25.7,1.3,24.5,0.8,23.5,1.1z" />
+                    <line class="st0" x1="3" y1="21" x2="29" y2="21" />
+                </svg>
+                <p class="description-container__text">Collections</p>
+            </div>
+            <div class="description-container__wrapper">
+                <svg class="description-container__img" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Icons" x="0px" y="0px"
+                    viewBox="0 0 32 32" style="enable-background:new 0 0 32 32;" xml:space="preserve">
+                    <style type="text/css">
+                        .st0 {
+                            fill: none;
+                            stroke: #ffffff;
+                            stroke-width: 2;
+                            stroke-linecap: round;
+                            stroke-linejoin: round;
+                            stroke-miterlimit: 10;
+                        }
+                    </style>
+                    <path class="st0"
+                        d="M26,22H6c-2.2,0-4-1.8-4-4V8c0-2.2,1.8-4,4-4h20c2.2,0,4,1.8,4,4v10C30,20.2,28.2,22,26,22z" />
+                    <line class="st0" x1="3" y1="27" x2="7" y2="27" />
+                    <line class="st0" x1="11" y1="27" x2="29" y2="27" />
+                    <circle class="st0" cx="9" cy="27" r="2" />
+                    <path class="st0"
+                        d="M13,10V16c0,0.7,0.9,1.2,1.5,0.8l5-3c0.6-0.4,0.6-1.2,0-1.6l-5-3C13.9,8.7,13,9.2,13,10z" />
+                </svg>
+                <p class="description-container__text">Community</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- photo -->
+    <section class="photo">
+        <h2 class="visually-hidden">Photo block</h2>
+        <div class="photo__wrapper">
+            <p class="photo__text title">The largest community of film enthusiasts</p>
+            <button class="photo__button button">Join Today</button>
+        </div>
+    </section>
+
+    <!-- slider-mini -->
+    <div class="variety-films-main">
+        <div class="variety-films-main__wrapper">
+            <div class="variety-films-main__head">
+                <h2>Что посмотреть вечером</h2>
+            </div>
+            <div class="variety-films-main__text">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                </p>
+            </div>
+        </div>
+        <div class="variety-films-main__slider-mini slider-mini">
+            <div class="slider-mini__container">
+                <div class="slider-mini__slider-line">
+                    <a href="#"><img class="slider-mini__img" src="./assets/images/slider-mini/fastFurious-1.jpg"
+                            alt="The Fast and the Furious"></a>
+                    <a href="#"><img class="slider-mini__img" src="./assets/images/slider-mini/fastFurious-2.jpg"
+                            alt="The Fast and the Furious 2"></a>
+                    <a href="#"><img class="slider-mini__img" src="./assets/images/slider-mini/fastFurious-3.jpg"
+                            alt="The Fast and the Furious 3"></a>
+                    <a href="#"><img class="slider-mini__img" src="./assets/images/slider-mini/fastFurious-4.jpg"
+                            alt="The Fast and the Furious 4"></a>
+                    <a href="#"><img class="slider-mini__img" src="./assets/images/slider-mini/fastFurious-5.jpg"
+                            alt="The Fast and the Furious 5"></a>
+                    <a href="#"><img class="slider-mini__img" src="./assets/images/slider-mini/fastFurious-6.jpg"
+                            alt="The Fast and the Furious 6"></a>
+                    <a href="#"><img class="slider-mini__img" src="./assets/images/slider-mini/fastFurious-7.jpg"
+                            alt="The Fast and the Furious 7"></a>
+                    <a href="#"><img class="slider-mini__img" src="./assets/images/slider-mini/fastFurious-8.jpg"
+                            alt="The Fast and the Furious 8"></a>
+                    <a href="#"><img class="slider-mini__img" src="./assets/images/slider-mini/fastFurious-9.jpg"
+                            alt="The Fast and the Furious 9"></a>
+                    <a href="#"><img class="slider-mini__img" src="./assets/images/slider-mini/fastFurious-10.jpg"
+                            alt="The Fast and the Furious 10"></a>
+                </div>
+            </div>
+            <button class="slider-mini__btn-prev"></button>
+            <button class="slider-mini__btn-next"></button>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./assets/scripts/script.js"></script>
+    <script src="./assets/scripts/slider-mini.js"></script>
+
+    <!-- footer-->
+
 </body>
+
 </html>
