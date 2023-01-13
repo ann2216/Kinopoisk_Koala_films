@@ -202,6 +202,14 @@
   color: rgba(0, 0, 0, 0.8);
 }
 
+.forma_name {
+  margin-left: 132px;
+  margin-top: 20px;
+  background: #D9D9D9;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 6px;
+}
+
 .forma_textarea {
   box-sizing: border-box;
   margin-left: 132px;
@@ -271,8 +279,8 @@
   position: relative;
 }
 
-textarea {
-  padding: 20px;
+input {
+  padding: 10px;
 }
 
 /*# sourceMappingURL=main.css.map */
