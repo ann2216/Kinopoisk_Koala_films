@@ -2,10 +2,64 @@
     display: grid;
     text-align: center;
     align-items: center;
-    width: 1680px;
     height: 370px;
     left: 0px;
     top: 3129px;
     background: #494B68;
 }
 
+.section-footer {
+    position: relative;
+    display: grid; 
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-row-gap: 5px;
+    grid-column-gap: 5px;
+    text-align: center;
+    align-items: center;
+    height: 370px;
+}
+
+.footer-pfw {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.social {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    transition: all .3s linear;
+}
+
+.footer-community {
+    grid-column-start: 6;
+    grid-column-end: 7;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.footer-company {
+    grid-column-start: 7;
+    grid-column-end: 8;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.footer-button1 {
+    grid-column-start: 8;
+    grid-column-end: 9;
+    grid-row-start: 1;
+    grid-row-end: 2;
+
+}
+
+.footer-button2 {
+    grid-column-start: 8;
+    grid-column-end: 9;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
