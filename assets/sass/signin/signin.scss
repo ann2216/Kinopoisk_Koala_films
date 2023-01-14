@@ -41,61 +41,52 @@
 }
 
 .section-signin__signin {
-    margin-top: 417px;
+    margin-top: 350px;
 }
-.h1 {
+.h1-signin {
     margin: 0;
-    padding-bottom: 5px;
-    text-align: center;
+    padding-bottom: 40px;
+    text-align: left;
 }
 .form-signin {
     margin: 0 auto;
     background: white;
     color: black;
     width: 622px;
-    height: 373px;
-    padding: 20px;
     border: 1px solid black;
     border-radius: 6px;
-}
-.group {
-    margin: 10px;
-    padding: 5px;
+    padding: 65px;
 }
 label {
-    padding-left: 10px;
     text-transform: uppercase;
 }
 .input {
-    margin-top: 10px;
+    margin-bottom: 24px;
     height: 40px;
-    width: 400px;
-    border-radius: 6px/6px;
-    margin: 0 auto;
+    width: 100%;
+    border-radius: 6px;
     display: block;
+    padding-left: 14px;
 }
 .input:focus {
     border: 2px solid black;
     transform: translateX(15px);
-    width: 385px;
+    width: 100%;
 }
-.btn {
+.btn-signin {
     cursor: pointer;
-    padding: 10px 30px;
     height: 50px;
     color: white;
     background: #494B68;
     border: none;
-    text-transform: uppercase;
     font-size: 15px;
     box-shadow: 2px 2px 5px rgba(0,0,0,0.82);
-    margin: 0 auto;
     display: block;
     width: 130px;
     height: 40px;
     border-radius: 6px;
 }
-.btn:hover {
+.btn-signin:hover {
     opacity: .80;
     font-weight: bold;
     transform: scale(1.1);

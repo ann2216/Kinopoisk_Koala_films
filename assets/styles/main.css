@@ -550,6 +550,21 @@ textarea {
   top: 0;
 }
 
+.header-a {
+  text-decoration: none;
+  color: white;
+}
+
+.button-a1 {
+  text-decoration: none;
+  color: black;
+}
+
+.button-a2 {
+  text-decoration: none;
+  color: white;
+}
+
 .main_catalogue {
   grid-column-start: 2;
   grid-column-end: 3;
@@ -593,6 +608,7 @@ textarea {
   color: black;
   border-radius: 6px;
   border: 1px solid #C5C6C7;
+  text-decoration: none;
 }
 
 .button_button2 {
@@ -607,71 +623,64 @@ textarea {
   background: #494B68;
   border-radius: 6px;
   border: 1px solid #C5C6C7;
-}
-
-.footer {
-  display: grid;
-  text-align: center;
-  align-items: center;
-  height: 370px;
-  left: 0px;
-  top: 3129px;
-  background: #494B68;
+  text-decoration: none;
 }
 
 .section-footer {
-  position: relative;
-  display: grid;
-  grid-template-columns: repeat(8, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  grid-row-gap: 5px;
-  grid-column-gap: 5px;
-  text-align: center;
-  align-items: center;
-  height: 370px;
+  display: flex;
+  flex-direction: row;
+  background: #494B68;
+  padding: 120px 80px 120px;
+  justify-content: space-between;
 }
 
-.footer-pfw {
-  grid-column-start: 1;
-  grid-column-end: 3;
-  grid-row-start: 1;
-  grid-row-end: 3;
+.social-container {
+  display: flex;
+  flex-direction: row;
+  margin: 30px 0;
 }
 
 .social {
-  grid-column-start: 3;
-  grid-column-end: 4;
-  grid-row-start: 1;
-  grid-row-end: 3;
-  transition: all 0.3s linear;
+  display: flex;
+  flex-direction: row;
+}
+
+.social-item {
+  list-style-type: none;
+  margin-left: 26px;
+}
+
+.section-footer-rigth {
+  display: flex;
+  flex-direction: row;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 24px;
+  margin-bottom: 16px;
 }
 
 .footer-community {
-  grid-column-start: 6;
-  grid-column-end: 7;
-  grid-row-start: 1;
-  grid-row-end: 3;
+  width: 173px;
+  margin-right: 18px;
+  line-height: 24px;
 }
 
 .footer-company {
-  grid-column-start: 7;
-  grid-column-end: 8;
-  grid-row-start: 1;
-  grid-row-end: 3;
+  width: 173px;
+  margin-right: 63px;
+  line-height: 24px;
 }
 
-.footer-button1 {
-  grid-column-start: 8;
-  grid-column-end: 9;
-  grid-row-start: 1;
-  grid-row-end: 2;
+.footer-buttons {
+  display: flex;
+  flex-direction: column;
 }
 
 .footer-button2 {
-  grid-column-start: 8;
-  grid-column-end: 9;
-  grid-row-start: 2;
-  grid-row-end: 3;
+  margin-bottom: 24px;
 }
 
 .signin {
@@ -717,13 +726,13 @@ textarea {
 }
 
 .section-signin__signin {
-  margin-top: 417px;
+  margin-top: 350px;
 }
 
-.h1 {
+.h1-signin {
   margin: 0;
-  padding-bottom: 5px;
-  text-align: center;
+  padding-bottom: 40px;
+  text-align: left;
 }
 
 .form-signin {
@@ -731,55 +740,45 @@ textarea {
   background: white;
   color: black;
   width: 622px;
-  height: 373px;
-  padding: 20px;
   border: 1px solid black;
   border-radius: 6px;
-}
-
-.group {
-  margin: 10px;
-  padding: 5px;
+  padding: 65px;
 }
 
 label {
-  padding-left: 10px;
   text-transform: uppercase;
 }
 
 .input {
-  margin-top: 10px;
+  margin-bottom: 24px;
   height: 40px;
-  width: 400px;
-  border-radius: 6px/6px;
-  margin: 0 auto;
+  width: 100%;
+  border-radius: 6px;
   display: block;
+  padding-left: 14px;
 }
 
 .input:focus {
   border: 2px solid black;
   transform: translateX(15px);
-  width: 385px;
+  width: 100%;
 }
 
-.btn {
+.btn-signin {
   cursor: pointer;
-  padding: 10px 30px;
   height: 50px;
   color: white;
   background: #494B68;
   border: none;
-  text-transform: uppercase;
   font-size: 15px;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.82);
-  margin: 0 auto;
   display: block;
   width: 130px;
   height: 40px;
   border-radius: 6px;
 }
 
-.btn:hover {
+.btn-signin:hover {
   opacity: 0.8;
   font-weight: bold;
   transform: scale(1.1);
@@ -828,10 +827,10 @@ label {
 }
 
 .section-signup__registration {
-  margin-top: 417px;
+  margin-top: 370px;
 }
 
-.h1 {
+.h1-signup {
   margin: 0;
   padding-bottom: 5px;
   text-align: center;
@@ -842,55 +841,45 @@ label {
   background: white;
   color: black;
   width: 622px;
-  height: 521px;
   padding: 20px;
   border: 1px solid black;
   border-radius: 6px;
 }
 
-.group {
-  margin: 10px;
-  padding: 5px;
-}
-
 label {
-  padding-left: 10px;
   text-transform: uppercase;
 }
 
 .input {
   margin-top: 10px;
   height: 40px;
-  width: 400px;
-  border-radius: 6px/6px;
-  margin: 0 auto;
+  width: 100%;
+  border-radius: 6px;
   display: block;
+  padding-left: 14px;
 }
 
 .input:focus {
   border: 2px solid black;
   transform: translateX(15px);
-  width: 385px;
+  width: 100%;
 }
 
-.btn {
+.btn-signup {
   cursor: pointer;
-  padding: 10px 30px;
   height: 50px;
   color: white;
   background: #494B68;
   border: none;
-  text-transform: uppercase;
   font-size: 15px;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.82);
-  margin: 0 auto;
   display: block;
   width: 130px;
   height: 40px;
   border-radius: 6px;
 }
 
-.btn:hover {
+.btn-signup:hover {
   opacity: 0.8;
   font-weight: bold;
   transform: scale(1.1);
