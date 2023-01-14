@@ -1,35 +1,35 @@
 @charset "UTF-8";
 @font-face {
   font-family: "Raleway";
-  src: url(/assets/fonts/Raleway-Regular.woff2) format("woff2");
+  src: url(../fonts/Raleway-Regular.woff2) format("woff2");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Raleway";
-  src: url(/assets/fonts/Raleway-Medium.woff2) format("woff2");
+  src: url(../fonts/Raleway-Medium.woff2) format("woff2");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Raleway";
-  src: url(/assets/fonts/Raleway-Thin.woff2) format("woff2");
+  src: url(../fonts/Raleway-Thin.woff2) format("woff2");
   font-weight: 100;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Raleway";
-  src: url(/assets/fonts/Raleway-Bold.woff2) format("woff2");
+  src: url(../fonts/Raleway-Bold.woff2) format("woff2");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Raleway";
-  src: url(/assets/fonts/Raleway-Light.woff2) format("woff2");
+  src: url(../fonts/Raleway-Light.woff2) format("woff2");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -71,6 +71,7 @@ body {
 }
 
 .slider-maxi__text {
+  margin-bottom: 2rem;
   font-family: inherit;
   font-size: 3.5rem;
   font-weight: bold;
@@ -116,7 +117,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
   display: none;
 }
 
-.description {
+.description-main {
   padding: 5rem 10rem;
 }
 
@@ -125,6 +126,11 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
   font-size: 3rem;
   font-weight: normal;
   text-align: center;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: normal;
 }
 
 .description-container {
@@ -174,10 +180,6 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
     width: 5rem;
   }
 }
-body {
-  margin: 0;
-}
-
 .variety-films-main {
   color: #ffffff;
   background-color: #000000;
@@ -191,6 +193,7 @@ body {
   text-align: center;
 }
 .variety-films-main__head {
+  margin: 120px 0px 30px 0px;
   font: 400 48px/72px "Raleway";
 }
 .variety-films-main__text {
@@ -203,7 +206,7 @@ body {
 .slider-mini__container {
   max-width: 80%;
   margin: 20px auto;
-  padding: 50px 0px;
+  padding: 57px 0px 116px 0px;
   background: #000000;
   overflow: hidden;
 }
@@ -232,6 +235,32 @@ body {
 .slider-mini__btn-next {
   right: 50px;
   background: #000000 url("../images/slider-mini/icons/next-button.svg") no-repeat center;
+}
+
+.collections-of-films__wrapper {
+  align-items: flex-start;
+  text-align: start;
+}
+.collections-of-films__head {
+  margin: 62px 0px 183px 0px;
+}
+
+.genres__block {
+  display: flex;
+  gap: 198px;
+  margin: 50px 0px 114px 0px;
+  font: 700 20px/50px "Raleway";
+  text-decoration: none;
+}
+
+.genres__block a {
+  padding-bottom: 24px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.genres__block p {
+  padding-bottom: 24px;
 }
 
 .long-line {
@@ -473,6 +502,17 @@ body {
 
 textarea {
   padding: 20px;
+}
+
+.movie-result {
+  padding: 5rem;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 1.5rem;
+}
+
+.movie-card {
+  width: 3rem;
 }
 
 .header {
@@ -854,6 +894,38 @@ label {
   opacity: 0.8;
   font-weight: bold;
   transform: scale(1.1);
+}
+
+.photo {
+  padding: 25rem 40rem 15rem 10rem;
+  background-image: url("/assets/img/moulin-rouge.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: #494B68;
+}
+
+.photo__text {
+  margin-bottom: 2rem;
+}
+
+.photo__button {
+  font-family: inherit;
+}
+
+.button {
+  padding: 0.8rem 3rem;
+  font-size: 1rem;
+  background-color: #494B68;
+  color: inherit;
+  text-decoration: none;
+  border: 1px solid #ffffff;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.button:hover {
+  background-color: #D9D9D9;
+  color: #000000;
 }
 
 /*# sourceMappingURL=main.css.map */
