@@ -41,7 +41,7 @@
 }
 
 .section-signup__registration {
-    margin-top: 417px;
+    margin-top: 370px;
 }
 .h1 {
     margin: 0;
@@ -79,7 +79,7 @@ label {
     transform: translateX(15px);
     width: 385px;
 }
-.btn {
+.btn-signup {
     cursor: pointer;
     padding: 10px 30px;
     height: 50px;
@@ -95,7 +95,7 @@ label {
     height: 40px;
     border-radius: 6px;
 }
-.btn:hover {
+.btn-signup:hover {
     opacity: .80;
     font-weight: bold;
     transform: scale(1.1);
