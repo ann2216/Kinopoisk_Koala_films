@@ -11,17 +11,53 @@
 </head>
 
 <body>
-    <header></header>
+    <!-- header-->
+    <header class="header">
+        <div class="header-container container">
+            <div class="header_logo"></div>
+            <p class="section_logo" style="color:white">Koala Films</p>
+            <!-- Меню -->
+            <p class="main_catalogue" style="color:white"><a href="./catalogue.html">Catalogue</a></p>
+            <p class="main_collections" style="color:white">Collections</p>
+            <p class="main_community" style="color:white">Community</p>
+            <p class="main_onlinetv" style="color:white">Online TV</p>
+            <button class="button_button1">Sign In</button>
+            <button class="button_button2">Sign Up</button>
+        </div>
+    </header>
     <main>
         <section class="catalogue">
             <h1 class="catalogue__title title">Find Your film Here</h1>
+            <div class="catalogue-inputs">
+                <input type="text" class="catalogue-inputs__search input" placeholder="Search">
+                <!-- <input type="text" class="catalogue-inputs__search-btn button"> -->
+                <select name="genre" id="genre" class="catalogue-inputs__select input" aria-placeholder="Genre">
+                    <option value="Action" class="catalogue__option-inputs catalogue-inputs__option_genre" default>Genre
+                    </option>
+                    <option value="Action" class="catalogue__option-inputs catalogue-inputs__option_genre">Action
+                    </option>
+                    <option value="Comedy" class="catalogue__option-inputs catalogue-inputs__option_genre">Comedy
+                    </option>
+                    <option value="Adventure" class="catalogue__option-inputs catalogue-inputs__option_genre">Adventure
+                    </option>
+                    <option value="Crime" class="catalogue__option-inputs catalogue-inputs__option_genre">Crime</option>
+                    <option value="Animation" class="catalogue__option-inputs catalogue-inputs__option_genre">Animation
+                    </option>
+                    <option value="Si-Fi" class="catalogue__option-inputs catalogue-inputs__option_genre">Si-Fi</option>
+                    <option value="Horror" class="catalogue__option-inputs catalogue-inputs__option_genre">Horror
+                    </option>
+                </select>
+                <select name="rating" id="rating" class="catalogue-inputs__select input" aria-placeholder="Rating">
+                    <option value="" class="catalogue-inputs__option catalogue-inputs__option_rating" default>Rating
+                    </option>
+                    <option value="" class="catalogue-inputs__option catalogue-inputs__option_rating">7-8</option>
+                    <option value="" class="catalogue-inputs__option catalogue-inputs__option_rating">9-10</option>
+                </select>
+            </div>
 
         </section>
         <section class="movie-result">
-            <div class="movie-card">
-                <img src="" alt="" class="movie-card__img">
-                <p class="movie-card__title"></p>
-            </div>
+            <!-- <a href="#" class="button" id="loadMore">Load More</a> -->
         </section>
     </main>
     <footer></footer>
