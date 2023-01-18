@@ -128,7 +128,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
   text-align: center;
 }
 
-.title {
+.commontitle {
   font-size: 3rem;
   font-weight: normal;
 }
@@ -521,6 +521,10 @@ main {
 }
 
 .movie-card {
+  height: 10rem;
+  padding: 1rem;
+  background-color: #121212;
+  box-shadow: inset;
   text-align: center;
 }
 .movie-card:hover {
@@ -540,7 +544,7 @@ main {
   cursor: pointer;
 }
 
-.input {
+.catalogue-input {
   padding: 0.5rem 1.25rem;
   font-family: inherit;
   font-size: 1rem;
@@ -549,7 +553,7 @@ main {
   border: 1px solid rgba(0, 0, 0, 0.5);
   border-radius: 6px;
 }
-.input:focus {
+.catalogue-input:focus {
   outline: none;
 }
 

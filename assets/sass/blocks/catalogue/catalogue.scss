@@ -15,6 +15,10 @@ main {
 }
 
 .movie-card {
+    height: 10rem;
+    padding: 1rem;
+    background-color: #121212;
+    box-shadow: inset;
     text-align: center;
 
     &:hover {
@@ -35,7 +39,7 @@ main {
     cursor: pointer;
 }
 
-.input {
+.catalogue-input {
     padding: 0.5rem 1.25rem;
     font-family: inherit;
     font-size: 1rem;
