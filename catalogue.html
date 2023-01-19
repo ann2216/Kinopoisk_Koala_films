@@ -27,7 +27,7 @@
     </header>
     <main>
         <section class="catalogue">
-            <h1 class="catalogue__title commontitle">Find Your film Here</h1>
+            <h1 class="catalogue__title commontitle">Find Your Movie Here</h1>
             <div class="catalogue-inputs">
                 <form action="submit" class="search-form">
                     <input type="text" class="catalogue-inputs__search catalogue-input" placeholder="Search">
@@ -37,7 +37,7 @@
                         class="catalogue-inputs__select catalogue-inputs__select_genre catalogue-input"
                         aria-placeholder="Genre">
                         <option value="Genre" class="catalogue__option-inputs catalogue-inputs__option_genre" default>
-                            Genre
+                            Choose Genre
                         </option>
                         <option value="Action" class="catalogue__option-inputs catalogue-inputs__option_genre">Action
                         </option>
@@ -61,10 +61,13 @@
                     <select name="rating" id="rating"
                         class="catalogue-inputs__select catalogue-inputs__select_rating catalogue-input"
                         aria-placeholder="Rating">
-                        <option value="" class="catalogue-inputs__option catalogue-inputs__option_rating" default>Rating
+                        <option value="Rating" class="catalogue-inputs__option catalogue-inputs__option_rating" default>
+                            Rating
                         </option>
-                        <option value="" class="catalogue-inputs__option catalogue-inputs__option_rating">7-8</option>
-                        <option value="" class="catalogue-inputs__option catalogue-inputs__option_rating">9-10</option>
+                        <option value="average" class="catalogue-inputs__option catalogue-inputs__option_rating">7-8
+                        </option>
+                        <option value="high" class="catalogue-inputs__option catalogue-inputs__option_rating">9-10
+                        </option>
                     </select>
                 </form>
             </div>
@@ -113,6 +116,7 @@
         </div>
     </footer>
     <script src="./assets/scripts/catalogue.js"></script>
+    <script src="https://unpkg.com/infinite-scroll@4/dist/infinite-scroll.pkgd.min.js"></script>
 </body>
 
 </html>

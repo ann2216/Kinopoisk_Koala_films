@@ -39,7 +39,12 @@ main {
 }
 
 .movie-card__title {
-    margin-bottom: 1.3rem;
+    margin-bottom: 1.2rem;
+}
+
+.movie-card__rating {
+    font-size: 0.8rem;
+    color: $add-color;
 }
 
 .catalogue-input {
@@ -90,6 +95,7 @@ main {
 }
 
 .modal__card {
+    padding: 5rem;
     display: flex;
     flex-direction: column;
     max-width: 80%;

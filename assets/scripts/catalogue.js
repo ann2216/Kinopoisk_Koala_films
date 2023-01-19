@@ -8,10 +8,11 @@ const modalEl = document.querySelector(".modal");
 
 // catalogue
 document.addEventListener('DOMContentLoaded', function (event) {
+	genreInput.value = "Genre";
+	ratingForm.value = "Rating";
+
 	getMovies = async () => {
-		const response = await fetch(
-			'https://imdb-api.com/en/API/Top250Movies/k_ufnf8skn'
-		);
+		const response = await fetch('https://imdb-api.com/en/API/Top250Movies/k_ufnf8skn/?limit=10');
 		const allMovies = await response.json();
 		console.log(allMovies);
 		show(allMovies.items);
@@ -33,8 +34,11 @@ document.addEventListener('DOMContentLoaded', function (event) {
 	}
 });
 
-        // ${ movie.imDbRating && `<div class="movie__average movie__average--${getClassByRate(movie.imDbRating)}">${movie.imDbRating}</div>`
-        // }
+// let infScroll = new InfiniteScroll( movieContainer, {
+//   path: '.pagination__next',
+//   append: '.movieEl',
+//   history: false,
+// });
 
 //search
 searchForm.addEventListener("submit", (e) => {
@@ -50,7 +54,6 @@ searchForm.addEventListener("submit", (e) => {
 		const allSearchMovies = await response.json();
 		console.log(allSearchMovies);
 
-		
 		if (allSearchMovies.results.length == 0) {
 		movieContainer.innerHTML = `<p class="subtitle">No Results found</p>`;
 		} else {
@@ -62,35 +65,51 @@ searchForm.addEventListener("submit", (e) => {
 		})
 		}
 	}
-	
 		getSearch();
 		search.value = "";
 	})
 	
 
 //filters	
-// genreForm.addEventListener("submit", (e) => {
-// 	getGenre = async () => {
-// 		const response = await fetch(`https://imdb-api.com/API/AdvancedSearch/k_ufnf8skn?genres=${genreInput.value}`);
-// 		const actionMovies = await response.json();
-// 		console.log(actionMovies);
-// 		actionMovies.results.forEach((movie) => {
-// 			movieContainer.innerHTML += `<a href="./movieCard.html" class="movie-card__link"><div class="movie-card">
-//                     <img width="100px" height='100px' src='${movie.image}' alt="Movie Poster." class="movie-card__img">
-//                     <p class="movie-card__title">${movie.title}</p>
-//                 </div></a>`;
-// 		})};
+genreForm.addEventListener("click", (e) => {
+	getGenre = async () => {
+		const response = await fetch(`https://imdb-api.com/API/AdvancedSearch/k_ufnf8skn?genres=${genreInput.value}`);
+		console.log(response);
+		const genreMovies = await response.json();
+		console.log(genreMovies);
+		movieContainer.innerHTML = "";
 
-// 	switch (genreInput.value) {
-// 		case "Action" : 
-// 			getGenre(action);
-// 			break;
-
-// 		case "Adventure":
-// 			getGenre(adventure);
-// 			break;
-// 	}
-// })
+		genreMovies.results.forEach((movie) => {
+			movieContainer.innerHTML += `<a href="./movieCard.html" class="movie-card__link"><div class="movie-card">
+                    <img src='${movie.image}' alt="Movie Poster." class="movie-card__img">
+                    <p class="movie-card__title">${movie.title}</p>
+                </div></a>`;
+		})};	
+		
+		switch (genreInput.value) {
+		case "Action" : 
+			getGenre();
+			break;
+		case "Comedy":
+			getGenre();
+			break;
+		case "Adventure":
+			getGenre();
+			break;
+		case "Crime":
+			getGenre();
+			break;
+		case "Animation":
+			getGenre();
+			break;
+		case "Si-Fi":
+			getGenre();
+			break;
+		case "Horror":
+			getGenre();
+			break;
+	}
+})
 
 
 //modal
@@ -144,8 +163,7 @@ async function openModal(id) {
             <p class="comment_first">Peter Parker's life and reputation are in jeopardy as Mysterio reveals Spider-Man's
                 identity to the world. In an attempt to rectify the situation, Peter turns to Stephen Strange for help,
                 but things soon become much more dangerous. Peter Parker's life and reputation are in jeopardy as
-                Mysterio reveals Spider-Man's identity to the world. In an attempt to rectify the situation, Peter turns
-                to Stephen Strange for help, but things soon become much more dangerous.</p>
+                Mysterio reveals Spider-Man's identity to the world.</p>
         </div>
         <hr class="long-line">
     </div>
