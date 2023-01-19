@@ -14,3 +14,4 @@ new Swiper('.slider-maxi__container', {
     prevEl: '.swiper-button-prev',
     },
 });
+
