@@ -527,7 +527,6 @@ input {
   display: grid;
   text-align: center;
   align-items: center;
-  width: 1680px;
   height: 60px;
   left: 0px;
   top: 0px;
@@ -541,7 +540,6 @@ input {
   grid-column-gap: 5px;
   text-align: center;
   align-items: center;
-  width: 1680px;
   height: 60px;
 }
 
@@ -558,6 +556,21 @@ input {
   line-height: 32px;
   left: 28.16%;
   top: 0;
+}
+
+.header-a {
+  text-decoration: none;
+  color: white;
+}
+
+.button-a1 {
+  text-decoration: none;
+  color: black;
+}
+
+.button-a2 {
+  text-decoration: none;
+  color: white;
 }
 
 .main_catalogue {
@@ -602,6 +615,8 @@ input {
   height: 40px;
   color: black;
   border-radius: 6px;
+  border: 1px solid #C5C6C7;
+  text-decoration: none;
 }
 
 .button_button2 {
@@ -615,6 +630,267 @@ input {
   color: #E5E5E5;
   background: #494B68;
   border-radius: 6px;
+  border: 1px solid #C5C6C7;
+  text-decoration: none;
+}
+
+.section-footer {
+  display: flex;
+  flex-direction: row;
+  background: #494B68;
+  padding: 120px 80px 120px;
+  justify-content: space-between;
+}
+
+.social-container {
+  display: flex;
+  flex-direction: row;
+  margin: 30px 0;
+}
+
+.social {
+  display: flex;
+  flex-direction: row;
+}
+
+.social-item {
+  list-style-type: none;
+  margin-left: 26px;
+}
+
+.section-footer-rigth {
+  display: flex;
+  flex-direction: row;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 24px;
+  margin-bottom: 16px;
+}
+
+.footer-community {
+  width: 173px;
+  margin-right: 18px;
+  line-height: 24px;
+}
+
+.footer-company {
+  width: 173px;
+  margin-right: 63px;
+  line-height: 24px;
+}
+
+.footer-buttons {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-button2 {
+  margin-bottom: 24px;
+}
+
+.signin {
+  height: 961px;
+}
+
+.main-signin__page {
+  width: 1392px;
+}
+
+.main-signin__subtitle_signin {
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 72px;
+  text-align: center;
+  letter-spacing: -0.015em;
+  color: #FFFFFF;
+  margin-top: 120px;
+}
+
+.main-signin__title_signin {
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 60px;
+  bottom: -180.56%;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 50px;
+  text-align: center;
+  letter-spacing: -0.015em;
+  color: #FFFFFF;
+  margin-top: 150px;
+}
+
+.section-signin__signin {
+  margin-top: 350px;
+}
+
+.h1-signin {
+  margin: 0;
+  padding-bottom: 40px;
+  text-align: left;
+}
+
+.form-signin {
+  margin: 0 auto;
+  background: white;
+  color: black;
+  width: 622px;
+  border: 1px solid black;
+  border-radius: 6px;
+  padding: 65px;
+}
+
+label {
+  text-transform: uppercase;
+}
+
+.input {
+  margin-bottom: 24px;
+  height: 40px;
+  width: 100%;
+  border-radius: 6px;
+  display: block;
+  padding-left: 14px;
+}
+
+.input:focus {
+  border: 2px solid black;
+  transform: translateX(15px);
+  width: 100%;
+}
+
+.btn-signin {
+  cursor: pointer;
+  height: 50px;
+  color: white;
+  background: #494B68;
+  border: none;
+  font-size: 15px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.82);
+  display: block;
+  width: 130px;
+  height: 40px;
+  border-radius: 6px;
+}
+
+.btn-signin:hover {
+  opacity: 0.8;
+  font-weight: bold;
+  transform: scale(1.1);
+}
+
+.signup {
+  height: 1129px;
+}
+
+.main-signup__page {
+  width: 1392px;
+}
+
+.main-signup__subtitle_signup {
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 72px;
+  text-align: center;
+  letter-spacing: -0.015em;
+  color: #FFFFFF;
+  margin-top: 120px;
+}
+
+.main-signup__title_signup {
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 141.67%;
+  bottom: -180.56%;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 50px;
+  text-align: center;
+  letter-spacing: -0.015em;
+  color: #FFFFFF;
+  margin-top: 150px;
+}
+
+.section-signup__registration {
+  margin-top: 370px;
+}
+
+.h1-signup {
+  margin: 0;
+  padding-bottom: 5px;
+  text-align: left;
+}
+
+.form-signup {
+  margin: 0 auto;
+  background: white;
+  color: black;
+  width: 622px;
+  padding: 20px;
+  border: 1px solid black;
+  border-radius: 6px;
+}
+
+label {
+  text-transform: uppercase;
+}
+
+.input {
+  margin-top: 10px;
+  height: 40px;
+  width: 100%;
+  border-radius: 6px;
+  display: block;
+  padding-left: 14px;
+}
+
+.input:focus {
+  border: 2px solid black;
+  transform: translateX(15px);
+  width: 100%;
+}
+
+.btn-signup {
+  cursor: pointer;
+  height: 50px;
+  color: white;
+  background: #494B68;
+  border: none;
+  font-size: 15px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.82);
+  display: block;
+  width: 130px;
+  height: 40px;
+  border-radius: 6px;
+}
+
+.btn-signup:hover {
+  opacity: 0.8;
+  font-weight: bold;
+  transform: scale(1.1);
 }
 
 .photo {

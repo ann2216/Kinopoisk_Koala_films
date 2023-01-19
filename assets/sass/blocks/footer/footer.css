@@ -1,1 +1,10 @@
-/*# sourceMappingURL=footer.css.map */
+.footer {
+  display: grid;
+  text-align: center;
+  align-items: center;
+  width: 1680px;
+  height: 370px;
+  left: 0px;
+  top: 3129px;
+  background: #494B68;
+}/*# sourceMappingURL=footer.css.map */

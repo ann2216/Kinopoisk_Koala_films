@@ -2,7 +2,6 @@
     display: grid;
     text-align: center;
     align-items: center;
-    width: 1680px;
     height: 60px;
     left: 0px;
     top: 0px;
@@ -16,7 +15,6 @@
     grid-column-gap: 5px;
     text-align: center;
     align-items: center;
-    width: 1680px;
     height: 60px;
 }
 
@@ -33,6 +31,21 @@
     line-height: 32px;
     left: 28.16%;  
     top: 0;
+}
+
+.header-a {
+    text-decoration: none;
+    color: white;
+}
+
+.button-a1 {
+    text-decoration: none;
+    color: black;
+}
+
+.button-a2 {
+    text-decoration: none;
+    color: white;
 }
 
 .main_catalogue {
@@ -74,6 +87,8 @@
     height: 40px;
     color: black;
     border-radius: 6px;
+    border: 1px solid #C5C6C7;
+    text-decoration: none;
 }
 
 .button_button2 {
@@ -87,4 +102,6 @@
     color: #E5E5E5;
     background: #494B68;
     border-radius: 6px;
+    border: 1px solid #C5C6C7;
+    text-decoration: none;
 }

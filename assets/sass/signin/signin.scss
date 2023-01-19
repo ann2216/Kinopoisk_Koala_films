@@ -1,0 +1,93 @@
+.signin {
+    height: 961px;
+}
+
+.main-signin__page {
+    width: 1392px;
+}
+
+.main-signin__subtitle_signin {
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 72px;   
+    text-align: center;
+    letter-spacing: -0.015em;
+    color: #FFFFFF;
+    margin-top: 120px;
+}
+
+.main-signin__title_signin {
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 60px;
+    bottom: -180.56%;    
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 50px;  
+    text-align: center;
+    letter-spacing: -0.015em;
+    color: #FFFFFF;
+    margin-top: 150px;
+}
+
+.section-signin__signin {
+    margin-top: 350px;
+}
+.h1-signin {
+    margin: 0;
+    padding-bottom: 40px;
+    text-align: left;
+}
+.form-signin {
+    margin: 0 auto;
+    background: white;
+    color: black;
+    width: 622px;
+    border: 1px solid black;
+    border-radius: 6px;
+    padding: 65px;
+}
+label {
+    text-transform: uppercase;
+}
+.input {
+    margin-bottom: 24px;
+    height: 40px;
+    width: 100%;
+    border-radius: 6px;
+    display: block;
+    padding-left: 14px;
+}
+.input:focus {
+    border: 2px solid black;
+    transform: translateX(15px);
+    width: 100%;
+}
+.btn-signin {
+    cursor: pointer;
+    height: 50px;
+    color: white;
+    background: #494B68;
+    border: none;
+    font-size: 15px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.82);
+    display: block;
+    width: 130px;
+    height: 40px;
+    border-radius: 6px;
+}
+.btn-signin:hover {
+    opacity: .80;
+    font-weight: bold;
+    transform: scale(1.1);
+}

@@ -77,6 +77,7 @@
   height: 40px;
   color: black;
   border-radius: 6px;
+  border: 1px solid #C5C6C7;
 }
 
 .button_button2 {
@@ -90,4 +91,5 @@
   color: #E5E5E5;
   background: #494B68;
   border-radius: 6px;
+  border: 1px solid #C5C6C7;
 }/*# sourceMappingURL=header.css.map */
