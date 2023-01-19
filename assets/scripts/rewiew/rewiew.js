@@ -1,10 +1,11 @@
 const cardList = document.querySelector('.wraper');
 const adminBtn = document.querySelector('.forma_submit');
 
-let data = localStorage.getItem('item')? JSON.parse(localStorage.getItem('item')): ;
+let data = localStorage.getItem('obj')? JSON.parse(localStorage.getItem('obj')): '';
+
 localStorage.setItem('obj', JSON.stringify(data));
 
-const storage = JSON.parse(localStorage.getItem('items'));
+const stor = JSON.parse(localStorage.getItem('obj'));
 
 const rewiews = (obj) => {
     const block = document.createElement('div');
@@ -51,7 +52,8 @@ adminBtn.addEventListener('click', () => {
         name: document.getElementById('name').value,
         comment: document.getElementById('rewiew').value,
     }
-    localStorage.setItem('obj', JSON.stringify('data'));
+    localStorage.setItem('obj', JSON.stringify(obj));
+
     addRewiews(obj, cardList);
     
     radioSelected.value = '';
@@ -60,4 +62,7 @@ adminBtn.addEventListener('click', () => {
     
 })
 
+Object.keys(stor).forEach((item) => {
+rewiews(item);
+});
 
