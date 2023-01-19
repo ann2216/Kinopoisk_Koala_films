@@ -263,15 +263,11 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
   padding-bottom: 24px;
 }
 
-.long-line {
+.long-lines {
   height: 0px;
   background: #E9EBF6;
-  width: 1455px;
-}
-
-.body {
-  background-color: black;
-  color: white;
+  margin-left: 190px;
+  width: 1465px;
 }
 
 .spiderMan {
@@ -357,6 +353,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
 .reviews {
   margin-left: 192px;
   margin-top: 113px;
+  margin-bottom: 25px;
   font-family: "Raleway";
   font-style: normal;
   font-weight: 700;
@@ -368,13 +365,6 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
 
 .comment_commentator {
   margin-left: 189px;
-  font-family: "Raleway";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 36px;
-  letter-spacing: -0.015em;
-  color: #FFFFFF;
 }
 
 .comment {
@@ -384,6 +374,16 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
   grid-template-areas: "column-1 column-2";
   grid-template-columns: 1fr 4fr;
   grid-template-rows: 200px;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: -0.015em;
+}
+
+.comment_name {
+  margin-right: 0px;
 }
 
 .comment_first {
