@@ -200,6 +200,26 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
   font: 400 36px/50px "Raleway";
 }
 
+.collections-of-films {
+  color: #ffffff;
+  background-color: #000000;
+}
+.collections-of-films__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1420px;
+  padding: 0px 30px;
+  text-align: center;
+}
+.collections-of-films__head {
+  margin: 120px 0px 30px 0px;
+  font: 400 48px/72px "Raleway";
+}
+.collections-of-films__text {
+  font: 400 36px/50px "Raleway";
+}
+
 .slider-mini {
   position: relative;
 }
@@ -243,6 +263,80 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
 }
 .collections-of-films__head {
   margin: 62px 0px 183px 0px;
+}
+
+.slider-mini-collections {
+  position: relative;
+}
+.slider-mini-collections__container {
+  max-width: 80%;
+  margin: 20px auto;
+  padding: 57px 0px 116px 0px;
+  background: #000000;
+  overflow: hidden;
+}
+.slider-mini-collections__slider-line {
+  display: flex;
+  left: 0;
+  transition: all ease 1s;
+}
+.slider-mini-collections__img {
+  max-height: 263px;
+  max-width: 243px;
+  padding: 0px 10px;
+}
+.slider-mini-collections__btn-prev, .slider-mini-collections__btn-next {
+  position: absolute;
+  top: 40%;
+  z-index: 2;
+  width: 40px;
+  height: 40px;
+  border: 0;
+}
+.slider-mini-collections__btn-prev {
+  left: 50px;
+  background: #000000 url("../images/slider-mini/icons/prev-button.svg") no-repeat center;
+}
+.slider-mini-collections__btn-next {
+  right: 50px;
+  background: #000000 url("../images/slider-mini/icons/next-button.svg") no-repeat center;
+}
+
+.slider-mini-series {
+  position: relative;
+}
+.slider-mini-series__container {
+  max-width: 80%;
+  margin: 20px auto;
+  padding: 57px 0px 116px 0px;
+  background: #000000;
+  overflow: hidden;
+}
+.slider-mini-series__slider-line {
+  display: flex;
+  left: 0;
+  transition: all ease 1s;
+}
+.slider-mini-series__img {
+  max-height: 263px;
+  max-width: 243px;
+  padding: 0px 10px;
+}
+.slider-mini-series__btn-prev, .slider-mini-series__btn-next {
+  position: absolute;
+  top: 40%;
+  z-index: 2;
+  width: 40px;
+  height: 40px;
+  border: 0;
+}
+.slider-mini-series__btn-prev {
+  left: 50px;
+  background: #000000 url("../images/slider-mini/icons/prev-button.svg") no-repeat center;
+}
+.slider-mini-series__btn-next {
+  right: 50px;
+  background: #000000 url("../images/slider-mini/icons/next-button.svg") no-repeat center;
 }
 
 .genres__block {
