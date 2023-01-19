@@ -28,41 +28,50 @@
     <main>
         <section class="catalogue">
             <h1 class="catalogue__title commontitle">Find Your film Here</h1>
-            <form class="catalogue-inputs">
-                <input type="text" class="catalogue-inputs__search catalogue-input" placeholder="Search">
-                <select name="genre" id="genre"
-                    class="catalogue-inputs__select catalogue-inputs__select_genre catalogue-input"
-                    aria-placeholder="Genre">
-                    <option value="Genre" class="catalogue__option-inputs catalogue-inputs__option_genre" default>Genre
-                    </option>
-                    <option value="Action" class="catalogue__option-inputs catalogue-inputs__option_genre">Action
-                    </option>
-                    <option value="Comedy" class="catalogue__option-inputs catalogue-inputs__option_genre">Comedy
-                    </option>
-                    <option value="Adventure" class="catalogue__option-inputs catalogue-inputs__option_genre">Adventure
-                    </option>
-                    <option value="Crime" class="catalogue__option-inputs catalogue-inputs__option_genre">Crime</option>
-                    <option value="Animation" class="catalogue__option-inputs catalogue-inputs__option_genre">Animation
-                    </option>
-                    <option value="Si-Fi" class="catalogue__option-inputs catalogue-inputs__option_genre">Si-Fi</option>
-                    <option value="Horror" class="catalogue__option-inputs catalogue-inputs__option_genre">Horror
-                    </option>
-                </select>
-                <select name="rating" id="rating"
-                    class="catalogue-inputs__select catalogue-inputs__select_rating catalogue-input"
-                    aria-placeholder="Rating">
-                    <option value="" class="catalogue-inputs__option catalogue-inputs__option_rating" default>Rating
-                    </option>
-                    <option value="" class="catalogue-inputs__option catalogue-inputs__option_rating">7-8</option>
-                    <option value="" class="catalogue-inputs__option catalogue-inputs__option_rating">9-10</option>
-                </select>
-            </form>
-
+            <div class="catalogue-inputs">
+                <form action="submit" class="search-form">
+                    <input type="text" class="catalogue-inputs__search catalogue-input" placeholder="Search">
+                </form>
+                <form action="submit" class="genre-form">
+                    <select name="genre" id="genre"
+                        class="catalogue-inputs__select catalogue-inputs__select_genre catalogue-input"
+                        aria-placeholder="Genre">
+                        <option value="Genre" class="catalogue__option-inputs catalogue-inputs__option_genre" default>
+                            Genre
+                        </option>
+                        <option value="Action" class="catalogue__option-inputs catalogue-inputs__option_genre">Action
+                        </option>
+                        <option value="Comedy" class="catalogue__option-inputs catalogue-inputs__option_genre">Comedy
+                        </option>
+                        <option value="Adventure" class="catalogue__option-inputs catalogue-inputs__option_genre">
+                            Adventure
+                        </option>
+                        <option value="Crime" class="catalogue__option-inputs catalogue-inputs__option_genre">Crime
+                        </option>
+                        <option value="Animation" class="catalogue__option-inputs catalogue-inputs__option_genre">
+                            Animation
+                        </option>
+                        <option value="Si-Fi" class="catalogue__option-inputs catalogue-inputs__option_genre">Si-Fi
+                        </option>
+                        <option value="Horror" class="catalogue__option-inputs catalogue-inputs__option_genre">Horror
+                        </option>
+                    </select>
+                </form>
+                <form action="submit" class="rating-form">
+                    <select name="rating" id="rating"
+                        class="catalogue-inputs__select catalogue-inputs__select_rating catalogue-input"
+                        aria-placeholder="Rating">
+                        <option value="" class="catalogue-inputs__option catalogue-inputs__option_rating" default>Rating
+                        </option>
+                        <option value="" class="catalogue-inputs__option catalogue-inputs__option_rating">7-8</option>
+                        <option value="" class="catalogue-inputs__option catalogue-inputs__option_rating">9-10</option>
+                    </select>
+                </form>
+            </div>
         </section>
         <section class="movie-result">
         </section>
-
-        <section class="pagination"></section>
+        <section class="modal"></section>
     </main>
     <footer class="footer">
         <div class="section-footer">
