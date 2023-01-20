@@ -359,6 +359,69 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
 
 main {
   padding: 3.75rem;
+=======
+.movie-result-popular,
+.movie-result-popularTV {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+
+.movie-card-popular {
+  width: 240px;
+  margin: 20px;
+  position: relative;
+}
+
+.movie-card__img-popular {
+  position: relative;
+  height: 360px;
+}
+
+.movie-card__img-popular-container {
+  max-width: 100%;
+  height: 100%;
+}
+
+.movie-card__info {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  font: 600 24px/40px "Raleway";
+  text-align: center;
+}
+
+.long-lines {
+  height: 0px;
+  background: #E9EBF6;
+  margin-left: 190px;
+  width: 1465px;
+}
+
+.spiderMan {
+  font-family: "Raleway";
+  margin-top: 63px;
+  margin-left: 200px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 72px;
+  letter-spacing: -0.015em;
+  color: #FFFFFF;
+}
+
+.rating {
+  margin-left: 200px;
+  margin-bottom: 55px;
+  font-style: normal;
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: -0.015em;
+  color: #FFFFFF;
+
 }
 
 .catalogue {
