@@ -47,8 +47,8 @@
 }
 
 @media (min-width: 576px) and (max-width: 900px) {
-    .section-footer, .social-container, .social, .social-item, .section-footer-rigth, .title, .footer-community, .footer-company, .footer-buttons, .footer-company  {
-      flex-direction: column;
-      margin-bottom: 0.5em;
-    }
-  }
+   .section-footer, .social-container, .social, .social-item, .section-footer-rigth, .title, .footer-community, .footer-company, .footer-buttons, .footer-company  {
+     flex-direction: column;
+     margin-bottom: 0.5em;
+   }
+}

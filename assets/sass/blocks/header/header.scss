@@ -33,6 +33,14 @@
     top: 0;
 }
 
+.section_logo {
+    position: absolute;
+    width: 122.07px;
+    height: 32px;
+    left: 20px;
+    top: 14px;
+}
+
 .header-a {
     text-decoration: none;
     color: white;
@@ -107,7 +115,7 @@
 }
 
  @media (min-width: 576px) and (max-width: 900px) {
-.header, .container, .header_logo, .header-a, .button-a1, .button-a2, .main_catalogue, .main_collections, .main_community, .main_onlinetv, .button_button1, .button_button2 {
+.header, .container, .header_logo, .section_logo, .header-a, .button-a1, .button-a2, .main_catalogue, .main_collections, .main_community, .main_onlinetv, .button_button1, .button_button2 {
     display: flex;
     flex-direction: column;
     margin-bottom: 0.5em;
