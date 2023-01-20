@@ -357,9 +357,6 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
   padding-bottom: 24px;
 }
 
-main {
-  padding: 3.75rem;
-=======
 .movie-result-popular,
 .movie-result-popularTV {
   display: flex;
@@ -392,36 +389,8 @@ main {
   text-align: center;
 }
 
-.long-lines {
-  height: 0px;
-  background: #E9EBF6;
-  margin-left: 190px;
-  width: 1465px;
-}
-
-.spiderMan {
-  font-family: "Raleway";
-  margin-top: 63px;
-  margin-left: 200px;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 48px;
-  line-height: 72px;
-  letter-spacing: -0.015em;
-  color: #FFFFFF;
-}
-
-.rating {
-  margin-left: 200px;
-  margin-bottom: 55px;
-  font-style: normal;
-  font-family: "Raleway";
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 36px;
-  letter-spacing: -0.015em;
-  color: #FFFFFF;
-
+main {
+  padding: 3.75rem;
 }
 
 .catalogue {
