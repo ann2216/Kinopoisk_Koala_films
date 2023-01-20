@@ -1,0 +1,89 @@
+<div class="modal__card">
+    <button class="modal__button_close button">X</button>
+    <h1 class="modal__title subtitle">${respData.title}</h1>
+    <p class="modal__rating">Rating: ${respData.imDbRating}</p>
+    <div class="modal__info">
+        <img src="${respData.image}" alt="Movie Poster." class="modal__img">
+        <ul class="modal__list">
+            <li class="modal__item">Year</li> <span class="modal__item-data">${respData.year}</span>
+            <li class="modal__item">Country</li> <span class="modal__item-data">${respData.countries}</span>
+            <li class="modal__item">Genres</li> <span class="modal__item-data">${respData.genres}</span>
+            <li class="modal__item">Cast</li> <span class="modal__item-data">${respData.stars}</span>
+        </ul>
+    </div>
+    <p class="modal__description">${respData.plot}</p>
+    <button class="modal__button_more button">Find out more</button>
+</div>
+
+
+<div class="modal__card">
+    <h1 class="spiderMan subtitle">${respData.title}</h1>
+    <button class="modal__button-close">X</button>
+    <div class="rating">
+        <p>Rating: ${respData.imDbRating}</p>
+    </div>
+    <div class="list">
+        <img class="icon" src="${respData.image}" alt="icon">
+        <ul class="person">
+            <li>Year</li>
+            <li>Country</li>
+            <li>Genres</li>
+        </ul>
+        <ul class="person-value">
+            <li>${respData.year}</li>
+            <li>${respData.countries}</li>
+            <li>${respData.genres}</li>
+        </ul>
+    </div>
+    <div class="description">${respData.plot}</div>
+    <div>
+        <p class="reviews">Reviews</p>
+        <div class="comment">
+            <div class="comment_commentator">
+                <p>Natalia</p>
+                <p>6/10</p>
+            </div>
+            <p class="comment_first">Peter Parker's life and reputation are in jeopardy as Mysterio reveals Spider-Man's
+                identity to the world. In an attempt to rectify the situation, Peter turns to Stephen Strange for help,
+                but things soon become much more dangerous.</p>
+        </div>
+        <hr class="long-line">
+        <div class="comment">
+            <div class="comment_commentator">
+                <p>Ostin</p>
+                <p>6/10</p>
+            </div>
+            <p class="comment_first">Peter Parker's life and reputation are in jeopardy as Mysterio reveals Spider-Man's
+                identity to the world. In an attempt to rectify the situation.</p>
+        </div>
+        <hr class="long-line">
+    </div>
+    <div class="forma">
+        <p class="forma_rewiew">Leave Your Review</p>
+        <div class="rating-area">
+            <a class="forma_rating">Your Rating: </a>
+            <input type="radio" id="star-10" name="rating" value="10">
+            <label for="star-10" title="Оценка «10»"></label>
+            <input type="radio" id="star-9" name="rating" value="9">
+            <label for="star-9" title="Оценка «9»"></label>
+            <input type="radio" id="star-8" name="rating" value="8">
+            <label for="star-8" title="Оценка «8»"></label>
+            <input type="radio" id="star-7" name="rating" value="7">
+            <label for="star-7" title="Оценка «7»"></label>
+            <input type="radio" id="star-6" name="rating" value="6">
+            <label for="star-6" title="Оценка «6»"></label>
+            <input type="radio" id="star-5" name="rating" value="5">
+            <label for="star-5" title="Оценка «5»"></label>
+            <input type="radio" id="star-4" name="rating" value="4">
+            <label for="star-4" title="Оценка «4»"></label>
+            <input type="radio" id="star-3" name="rating" value="3">
+            <label for="star-3" title="Оценка «3»"></label>
+            <input type="radio" id="star-2" name="rating" value="2">
+            <label for="star-2" title="Оценка «2»"></label>
+            <input type="radio" id="star-1" name="rating" value="1">
+            <label for="star-1" title="Оценка «1»"></label>
+        </div>
+        <textarea rows="8" placeholder="Your Review" class="forma_textarea"></textarea>
+        <div class="forma_button"><button class="forma_submit button">Submit</button></div>
+    </div>
+</div>

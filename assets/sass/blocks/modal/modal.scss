@@ -1,0 +1,97 @@
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: width 2s;
+}
+
+.modal__card {
+    padding: 5% 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 50%;
+    background-color: #121212;
+    color: $font-color;
+}
+
+.modal__button-close {
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    top: 2rem;
+    right: 18rem;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+
+    &:before, &:after {
+    position: absolute;
+    content: ' ';
+    height: 33px;
+    width: 2px;
+    background-color: $add-color;
+    }
+    &:before {
+    transform: rotate(45deg);
+        }
+    &:after {
+    transform: rotate(-45deg);
+}
+}
+
+.modal__container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.modal_show {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal__img {
+    width: 15rem;
+}
+
+.modal__list {
+    margin-left: 3rem;
+    list-style-type: none;
+}
+
+.modal__item-data {
+    margin-left: 2rem;
+    font-weight: normal;
+}
+
+.modal__item {
+    display: flex;
+    margin-bottom: 2rem;
+    font-weight: bold;
+}
+
+.modal__info {
+    display: flex;
+    justify-content: space-between;
+    margin: 3rem 0;
+}
+
+.modal__description {
+    margin-bottom: 2rem;
+}
+
+.modal__button_more {
+    width: 7rem;
+    text-align: center;
+}
+
+.modal__title {
+    margin-bottom: 1rem;
+}
