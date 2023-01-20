@@ -626,6 +626,13 @@ textarea {
   text-decoration: none;
 }
 
+@media (min-width: 576px) and (max-width: 900px) {
+  .header, .container, .header_logo, .header-a, .button-a1, .button-a2, .main_catalogue, .main_collections, .main_community, .main_onlinetv, .button_button1, .button_button2 {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.5em;
+  }
+}
 .section-footer {
   display: flex;
   flex-direction: row;
@@ -683,6 +690,12 @@ textarea {
   margin-bottom: 24px;
 }
 
+@media (min-width: 576px) and (max-width: 900px) {
+  .section-footer, .social-container, .social, .social-item, .section-footer-rigth, .title, .footer-community, .footer-company, .footer-buttons, .footer-company {
+    flex-direction: column;
+    margin-bottom: 0.5em;
+  }
+}
 .signin {
   height: 961px;
 }
@@ -745,11 +758,11 @@ textarea {
   padding: 65px;
 }
 
-label {
+.label {
   text-transform: uppercase;
 }
 
-.input {
+.input-signin {
   margin-bottom: 24px;
   height: 40px;
   width: 100%;
@@ -758,9 +771,9 @@ label {
   padding-left: 14px;
 }
 
-.input:focus {
+.input-signin:focus {
   border: 2px solid black;
-  transform: translateX(15px);
+  transform: translateX(7px);
   width: 100%;
 }
 
@@ -832,7 +845,7 @@ label {
 
 .h1-signup {
   margin: 0;
-  padding-bottom: 5px;
+  padding-bottom: 40px;
   text-align: left;
 }
 
@@ -841,27 +854,28 @@ label {
   background: white;
   color: black;
   width: 622px;
-  padding: 20px;
+  height: 521px;
+  padding: 65px;
   border: 1px solid black;
   border-radius: 6px;
 }
 
-label {
+.label {
   text-transform: uppercase;
 }
 
-.input {
-  margin-top: 10px;
+.input-signup {
+  margin-top: 25px;
   height: 40px;
-  width: 100%;
+  width: 95%;
   border-radius: 6px;
   display: block;
   padding-left: 14px;
 }
 
-.input:focus {
+.input-signup:focus {
   border: 2px solid black;
-  transform: translateX(15px);
+  transform: translateX(7px);
   width: 100%;
 }
 
@@ -877,6 +891,7 @@ label {
   width: 130px;
   height: 40px;
   border-radius: 6px;
+  margin-top: 25px;
 }
 
 .btn-signup:hover {
