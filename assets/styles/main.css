@@ -460,6 +460,13 @@ main {
   color: #ffffff;
 }
 
+.modal__button-close {
+  padding: 1rem;
+  margin: 1rem;
+  text-align: center;
+  border-radius: 50%;
+}
+
 .modal_show {
   display: flex;
   justify-content: center;
@@ -879,6 +886,7 @@ label {
 .long-lines {
   height: 0px;
   background: #E9EBF6;
+  width: 1455px;
 }
 
 .body {
@@ -890,26 +898,37 @@ label {
 
 .spiderMan {
   font-family: "Raleway";
+  margin-top: 63px;
+  margin-left: 200px;
   font-style: normal;
   font-weight: 400;
   font-size: 36px;
+  line-height: 72px;
   letter-spacing: -0.015em;
   color: #FFFFFF;
 }
 
 .rating {
+  margin-left: 200px;
+  margin-bottom: 55px;
   font-style: normal;
   font-family: "Raleway";
   font-weight: 700;
   font-size: 24px;
+  line-height: 36px;
   letter-spacing: -0.015em;
   color: #FFFFFF;
 }
 
 .icon {
+  margin-left: 199px;
   box-sizing: border-box;
   width: 20rem;
   height: auto;
+  width: 362px;
+  height: 435px;
+  left: 199px;
+  top: 229px;
   border: 1px solid #FFFFFF;
   border-radius: 6px;
 }
@@ -922,10 +941,12 @@ label {
 }
 
 .person {
+  margin-left: 141px;
   font-family: "Raleway";
   font-style: normal;
   font-weight: 700;
   font-size: 1rem;
+  line-height: 36px;
   letter-spacing: -0.015em;
   color: #FFFFFF;
 }
@@ -939,38 +960,50 @@ label {
   font-style: normal;
   font-weight: 500;
   font-size: 1rem;
+  line-height: 36px;
   letter-spacing: -0.015em;
   color: #FFFFFF;
 }
 
 .description {
+  margin-top: 55px;
+  margin-left: 192px;
+  margin-right: 195px;
   font-family: "Raleway";
   font-style: normal;
   font-weight: 500;
   font-size: 1rem;
+  line-height: 36px;
   letter-spacing: -0.015em;
   color: #FFFFFF;
 }
 
 .reviews {
+  margin-left: 192px;
+  margin-top: 113px;
   font-family: "Raleway";
   font-style: normal;
   font-weight: 700;
   font-size: 1rem;
+  line-height: 36px;
   letter-spacing: -0.015em;
   color: #FFFFFF;
 }
 
 .comment_commentator {
+  margin-left: 189px;
   font-family: "Raleway";
   font-style: normal;
   font-weight: 500;
   font-size: 1rem;
+  line-height: 36px;
   letter-spacing: -0.015em;
   color: #FFFFFF;
 }
 
 .comment {
+  margin-top: 45px;
+  margin-bottom: 70px;
   display: grid;
   grid-template-areas: "column-1 column-2";
   grid-template-columns: 1fr 4fr;
@@ -988,35 +1021,46 @@ label {
 }
 
 .comment_first {
+  margin-right: 190px;
   font-family: "Raleway";
   font-style: normal;
   font-weight: 500;
   font-size: 1rem;
+  line-height: 36px;
   letter-spacing: -0.015em;
   color: #FFFFFF;
 }
 
 .forma {
   box-sizing: border-box;
+  margin-left: 270px;
+  margin-top: 188px;
+  width: 1290px;
+  height: 400px;
   background: #D9D9D9;
   border: 1px solid rgba(0, 0, 0, 0.5);
   border-radius: 6px;
 }
 
 .forma_rewiew {
+  margin-left: 132px;
+  margin-top: 47px;
   font-family: "Raleway";
   font-style: normal;
   font-weight: 700;
   font-size: 1rem;
+  line-height: 36px;
   letter-spacing: -0.015em;
   color: #000000;
 }
 
 .forma_rating {
+  margin-left: 130px;
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
+  line-height: 24px;
   letter-spacing: -0.015em;
   color: rgba(0, 0, 0, 0.8);
 }
@@ -1031,6 +1075,8 @@ label {
 
 .forma_textarea {
   box-sizing: border-box;
+  margin-left: 132px;
+  margin-top: 30px;
   width: 1025.8px;
   height: 116.02px;
   background: #D9D9D9;
@@ -1040,6 +1086,10 @@ label {
 
 .forma_submit {
   box-sizing: border-box;
+  margin-left: 132px;
+  margin-top: 21px;
+  width: 269px;
+  height: 29px;
   background: #494B68;
   border: 1px solid #FFFFFF;
   border-radius: 6px;
@@ -1098,11 +1148,14 @@ input {
 
 .photo {
   padding: 25rem 40rem 15rem 10rem;
-  background-image: url("/assets/img/moulin-rouge.jpg");
+  background-image: url("//assets/img/moulin-rouge.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   background-color: #494B68;
+}
+.photo_secondary {
+  background-image: url("//assets/img/covers1.jpg");
 }
 
 .photo__text {

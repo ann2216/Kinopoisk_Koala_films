@@ -103,6 +103,13 @@ main {
     color: $font-color;
 }
 
+.modal__button-close {
+    padding: 1rem;
+    margin: 1rem;
+    text-align: center;
+    border-radius: 50%;
+}
+
 .modal_show {
     display: flex;
     justify-content: center;

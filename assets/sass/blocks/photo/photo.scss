@@ -1,10 +1,14 @@
 .photo {
     padding: 25rem 40rem 15rem 10rem;
-    background-image: url('/assets/img/moulin-rouge.jpg');
+    background-image: url('//assets/img/moulin-rouge.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     background-color: $btn-color;
+
+    &_secondary {
+        background-image: url('//assets/img/covers1.jpg');
+    }
 }
 
 .photo__text {

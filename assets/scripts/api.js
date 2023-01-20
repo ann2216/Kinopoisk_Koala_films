@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function (event) {
 	function show(allMovies) {
 		allMovies.forEach((movie) => {
 			movieContainer.innerHTML += `<div class="movie-card">
-                    <img width="100px" height='100px' src='${movie.image}' alt="" class="movie-card__img">
+                    <img src='${movie.image}' alt="" class="movie-card__img">
                     <p class="movie-card__title">${movie.fullTitle}</p>
                 </div>`;
 		});
@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function (event) {
 	function show(allMovies) {
 		allMovies.forEach((movie) => {
 			movieContainer2.innerHTML += `<div class="movie-card">
-                    <img width="100px" height='100px' src='${movie.image}' alt="" class="movie-card__img">
+                    <img src='${movie.image}' alt="" class="movie-card__img">
                     <p class="movie-card__title">${movie.fullTitle}</p>
                 </div>`;
 		});

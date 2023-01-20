@@ -34,12 +34,6 @@ document.addEventListener('DOMContentLoaded', function (event) {
 	}
 });
 
-// let infScroll = new InfiniteScroll( movieContainer, {
-//   path: '.pagination__next',
-//   append: '.movieEl',
-//   history: false,
-// });
-
 //search
 searchForm.addEventListener("submit", (e) => {
 	e.preventDefault();
@@ -57,11 +51,16 @@ searchForm.addEventListener("submit", (e) => {
 		if (allSearchMovies.results.length == 0) {
 		movieContainer.innerHTML = `<p class="subtitle">No Results found</p>`;
 		} else {
-		allSearchMovies.results.forEach((movie) => {
-			movieContainer.innerHTML += `<a href="./movieCard.html" class="movie-card__link"><div class="movie-card">
-                    <img src='${movie.image}' alt="Movie Poster." class="movie-card__img">
-                    <p class="movie-card__title">${movie.title}</p>
-                </div></a>`;
+		allSearchMovies.forEach((movie) => {
+			const movieEl = document.createElement("div");
+    		movieEl.classList.add("movie");
+    		movieEl.innerHTML = `<div class="movie-card">
+                    <img src='${movie.image}' alt="" class="movie-card__img">
+                    <p class="movie-card__title">${movie.fullTitle}</p><p class="movie-card__rating">Rating:<b>${movie.imDbRating}<b></p>
+                </div>`;
+
+				movieEl.addEventListener("click", () => openModal(movie.id));
+				movieContainer.appendChild(movieEl);
 		})
 		}
 	}
@@ -74,16 +73,19 @@ searchForm.addEventListener("submit", (e) => {
 genreForm.addEventListener("click", (e) => {
 	getGenre = async () => {
 		const response = await fetch(`https://imdb-api.com/API/AdvancedSearch/k_ufnf8skn?genres=${genreInput.value}`);
-		console.log(response);
 		const genreMovies = await response.json();
-		console.log(genreMovies);
 		movieContainer.innerHTML = "";
 
 		genreMovies.results.forEach((movie) => {
-			movieContainer.innerHTML += `<a href="./movieCard.html" class="movie-card__link"><div class="movie-card">
-                    <img src='${movie.image}' alt="Movie Poster." class="movie-card__img">
-                    <p class="movie-card__title">${movie.title}</p>
-                </div></a>`;
+			const movieEl = document.createElement("div");
+    		movieEl.classList.add("movie");
+    		movieEl.innerHTML = `<div class="movie-card">
+                    <img src='${movie.image}' alt="" class="movie-card__img">
+                    <p class="movie-card__title">${movie.title}</p><p class="movie-card__rating">Rating:<b>${movie.imDbRating}<b></p>
+                </div>`;
+
+				movieEl.addEventListener("click", () => openModal(movie.id));
+				movieContainer.appendChild(movieEl);
 		})};	
 		
 		switch (genreInput.value) {
@@ -111,38 +113,36 @@ genreForm.addEventListener("click", (e) => {
 	}
 })
 
-
 //modal
 async function openModal(id) {
-	
+	const API_details = "https://imdb-api.com/en/API/Title/k_ufnf8skn/"
+	const resp = await fetch(API_details + id);
+	const respData = await resp.json();
+
 	modalEl.classList.add("modal_show");
+	document.body.classList.add("stop-scrolling");
+
 	modalEl.innerHTML = `
 	<div class="modal__card">
-    	<h1 class="spiderMan">Spider Man</h1>
+    	<h1 class="spiderMan">${respData.title}</h1>
+		<button class="modal__button-close">X</button>
     <div class="rating">
-        <p>Rating: 8/10</a>
+        <p>Rating: ${respData.imDbRating}/a>
     </div>
     <div class="list">
-        <a class="icon"><img src="./assets/images/SpiderMan.png" alt="icon"></a>
+        <a class="icon"><img src="${respData.image}" alt="icon"></a>
         <ul class="person">
             <li>Year</li>
             <li>Country</li>
-            <li>Genre</li>
-            <li>Cast</li>
+            <li>Genres</li>
         </ul>
         <ul class="person-value">
-            <li>2014</li>
-            <li>USA</li>
-            <li>Fentasy</li>
+            <li>${respData.year}</li>
+            <li>${respData.countries}</li>
+            <li>${respData.genres}</li>
         </ul>
     </div>
-    <div class="description">
-        Peter Parker's life and reputation are in jeopardy as Mysterio reveals Spider-Man's identity to the world. In an
-        attempt to rectify the situation, Peter turns to Stephen Strange for help, but things soon become much more
-        dangerous. Peter Parker's life and reputation are in jeopardy as Mysterio reveals Spider-Man's identity to the
-        world. In an attempt to rectify the situation, Peter turns to Stephen Strange for help, but things soon become
-        much more dangerous.
-    </div>
+    <div class="description">${respData.plot}</div>
     <div>
         <p class="reviews">Reviews</p>
         <div class="comment">
@@ -201,17 +201,19 @@ async function openModal(id) {
 
 	function closeModal() {
 		modalEl.classList.remove("modal_show");  
+		document.body.classList.remove("stop-scrolling");
 }
 }
 
 window.addEventListener("click", (e) =>{
 	if (e.target === modalEl) {
-		closeModal()
+		closeModal();
 	}
 })
 
 window.addEventListener("keydown", (e) => {
 	if (e.keyCode === 27) {
-		modalEl.classList.remove("modal_show")
+		modalEl.classList.remove("modal_show");
+		document.body.classList.remove("stop-scrolling");
 	}
 })
