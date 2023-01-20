@@ -57,10 +57,10 @@
     border-radius: 6px;
     padding: 65px;
 }
-label {
+.label {
     text-transform: uppercase;
 }
-.input {
+.input-signin {
     margin-bottom: 24px;
     height: 40px;
     width: 100%;
@@ -68,9 +68,9 @@ label {
     display: block;
     padding-left: 14px;
 }
-.input:focus {
+.input-signin:focus {
     border: 2px solid black;
-    transform: translateX(15px);
+    transform: translateX(7px);
     width: 100%;
 }
 .btn-signin {
