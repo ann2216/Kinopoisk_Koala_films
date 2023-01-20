@@ -1,0 +1,24 @@
+.pagination {
+    display: flex;
+    justify-content: center;
+}
+
+.pagination__list {
+    display: flex;
+    list-style-type: none;
+}
+
+.pagination__item {
+    padding: 1.5rem;
+    margin: 1.5rem;
+    background-color: $add-color;
+    border: 1px solid $btn-color;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.pagination__item_active {
+    background-color: $btn-color;
+    color: $add-color;
+    border-color: $add-color;
+}
