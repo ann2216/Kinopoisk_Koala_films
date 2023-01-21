@@ -1063,7 +1063,8 @@ main {
 
 .forma {
   box-sizing: border-box;
-  margin-left: 270px;
+  margin-left: 100px;
+  margin-bottom: 50px;
   margin-top: 188px;
   width: 1290px;
   height: 400px;
@@ -1078,7 +1079,7 @@ main {
   font-family: "Raleway";
   font-style: normal;
   font-weight: 700;
-  font-size: 1rem;
+  font-size: 24px;
   line-height: 36px;
   letter-spacing: -0.015em;
   color: #000000;
@@ -1127,7 +1128,7 @@ main {
 
 .rating-area {
   overflow: hidden;
-  width: 400px;
+  width: 530px;
   margin-left: 2px;
 }
 
