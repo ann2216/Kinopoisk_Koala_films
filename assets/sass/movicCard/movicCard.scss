@@ -136,7 +136,8 @@ color: #FFFFFF;
 
 .forma{
 box-sizing: border-box;
-margin-left: 270px;
+margin-left: 100px;
+margin-bottom: 50px;
 margin-top: 188px;
 width: 1290px;
 height: 400px;
@@ -145,12 +146,12 @@ border: 1px solid rgba(0, 0, 0, 0.5);
 border-radius: 6px;
 }
 .forma_rewiew{
-    margin-left: 132px;
-    margin-top: 47px;
+  margin-left: 132px;
+  margin-top: 47px;
 font-family: 'Raleway';
 font-style: normal;
 font-weight: 700;
-font-size: 1rem;
+font-size: 24px;
 line-height: 36px;
 letter-spacing: -0.015em;
 color: #000000;
@@ -195,7 +196,7 @@ border-radius: 6px;
 
 .rating-area {
   overflow: hidden;
-  width: 400px;
+  width: 530px;
   margin-left: 2px;
 }
 .rating-area:not(:checked) > input {
