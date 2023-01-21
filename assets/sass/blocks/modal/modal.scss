@@ -69,12 +69,14 @@
 .modal__item-data {
     margin-left: 2rem;
     font-weight: normal;
+    text-decoration: none;
 }
 
 .modal__item {
     display: flex;
     margin-bottom: 2rem;
     font-weight: bold;
+    text-decoration: underline;
 }
 
 .modal__info {
@@ -95,3 +97,4 @@
 .modal__title {
     margin-bottom: 1rem;
 }
+

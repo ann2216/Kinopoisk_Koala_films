@@ -55,7 +55,7 @@ searchForm.addEventListener("submit", (e) => {
     		movieEl.classList.add("movie");
     		movieEl.innerHTML = `<div class="movie-card">
                     <img src='${movie.image}' alt="" class="movie-card__img">
-                    <p class="movie-card__title">${movie.title}</p><p class="movie-card__rating">Rating:<b>${movie.imDbRating}<b></p>
+                    <p class="movie-card__title">${movie.title}</p>
                 </div>`;
 
 				movieEl.addEventListener("click", () => openModal(movie.id));
@@ -134,10 +134,12 @@ async function openModal(id) {
             <li class="modal__item">Year<span class="modal__item-data">${respData.year}</span></li> 
             <li class="modal__item">Country<span class="modal__item-data">${respData.countries}</span></li> 
             <li class="modal__item">Genres<span class="modal__item-data">${respData.genres}</span></li> 
-            <li class="modal__item">Cast<span class="modal__item-data">${respData.stars}</span></li>
-			<li class="modal__item"><span class="modal__item-data">${respData.plot}</span></li> 
+            <li class="modal__item">Cast<span class="modal__item-data">${respData.stars}</span></li> 
+			<p class="modal__description">${respData.plot}</p>
         </ul>
+		
     </div>
+    
     <a href="movicCard.html" class="modal__button_more button">Learn more</a>
 </div>`;
 	const btnClose = document.querySelector(".modal__button-close");
